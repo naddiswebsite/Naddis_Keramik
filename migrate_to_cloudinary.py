@@ -12,9 +12,9 @@ import yaml, os, re, requests, hashlib
 from pathlib import Path
 
 # ── Konfiguration ──────────────────────────────────────────────────────────────
-CLOUD_NAME   = "DEIN_CLOUD_NAME"    # z.B. dqww81axk
-API_KEY      = "DEIN_API_KEY"
-API_SECRET   = "DEIN_API_SECRET"
+CLOUD_NAME   = "dqww81axk"    # z.B. dqww81axk
+API_KEY      = "862642912854559"
+API_SECRET   = "Pivk64ekYwDAy6D5QoKdOckMGOE"
 FOLDER       = "portfolio"
 # ──────────────────────────────────────────────────────────────────────────────
 
