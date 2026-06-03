@@ -3,24 +3,24 @@ name_it: Tazze
 name_en: Cups
 slug: tassen
 titelbild:
-  bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/espresso_g9fvyo
+  bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/espresso_g9fvyo
   alt_de: Tassen
   alt_it: Tazze
   alt_en: Cups
 bilder:
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/espresso_g9fvyo
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/espresso_g9fvyo
   beschreibung_de: Tazze - Tassen
   beschreibung_it: Tazze - Tassen
   beschreibung_en: Tazze - Cups
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/eisbecher_miudjt
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/eisbecher_miudjt
   beschreibung_de: ''
   beschreibung_it: ''
   beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/espresso_g9fvyo
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/espresso_g9fvyo
   beschreibung_de: ''
   beschreibung_it: ''
   beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/tassen_grünblau_stltkw
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/tassen_grünblau_stltkw
   beschreibung_de: ''
   beschreibung_it: ''
   beschreibung_en: ''
