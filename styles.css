@@ -40,8 +40,7 @@ img { display: block; max-width: 100%; height: auto; }
 ============================================= */
 
 .site-header {
-  padding: 0;
-  padding-right: var(--gap);
+  padding: 0 var(--gap);
 }
 
 .header-container {
@@ -56,13 +55,13 @@ img { display: block; max-width: 100%; height: auto; }
 
 .header-logo {
   flex-shrink: 0;
+  margin-left: -12px;
 }
 
 .logo-svg {
-  height: 110px;
+  height: 100px;
   width: auto;
   fill: var(--dark);
-  display: block;
 }
 
 .header-nav {
@@ -127,37 +126,44 @@ img { display: block; max-width: 100%; height: auto; }
 /* Mobile Menu */
 .burger {
   display: none;
+  flex-direction: column;
+  gap: 5px;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
+  padding: 8px;
   position: relative;
-  width: 32px;
-  height: 32px;
-  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .burger span {
   width: 24px;
   height: 2px;
   background: var(--dark);
+  transition: transform 0.3s ease, opacity 0.3s ease;
   position: absolute;
-  left: 4px;
-  top: 50%;
-  margin-top: -1px;
-  transform-origin: center center;
-  transition: transform 0.3s ease, opacity 0.2s ease;
+  left: 8px;
 }
 
-/* Burger: die drei Linien versetzt positionieren */
-.burger span:nth-child(1) { transform: translateY(-8px); }
-.burger span:nth-child(2) { transform: translateY(0); }
-.burger span:nth-child(3) { transform: translateY(8px); }
+.burger span:nth-child(1) { top: 11px; }
+.burger span:nth-child(2) { top: 19px; }
+.burger span:nth-child(3) { top: 27px; }
 
-/* X: alle drei wandern zur Mitte, äußere rotieren */
-.burger.open span:nth-child(1) { transform: translateY(0) rotate(45deg); }
-.burger.open span:nth-child(2) { opacity: 0; transform: translateY(0) scaleX(0); }
-.burger.open span:nth-child(3) { transform: translateY(0) rotate(-45deg); }
+.burger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.burger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 
 .mobile-nav {
   display: none;
@@ -484,20 +490,8 @@ main {
 }
 
 @media (max-width: 768px) {
-  .header-container {
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0;
-  }
-
-  .header-logo {
-    order: 2;
-  }
-
   .burger {
     display: flex;
-    order: 1;
-    margin-top: 4px;
   }
 
   .header-nav {
@@ -569,7 +563,6 @@ main {
   .logo-svg {
     height: 70px;
   }
-}
 
   .page-content h1 {
     font-size: 1.25rem;
