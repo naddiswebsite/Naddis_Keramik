@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% set current_url = 'about.html' %}
+{% set current_file = 'about.html' %}
+{% block title %}About — Naddi's{% endblock %}
+
+{% block content %}
+<div class="page-content">
+  <h1>{% if lang == 'de' %}Über mich{% elif lang == 'it' %}Chi sono{% else %}About{% endif %}</h1>
+  {% if about %}
+    <div class="about-wrapper">
+      {% if about['bild_' + lang] or about.bild %}
+      <div class="about-image">
+        <img src="{{ about['bild_' + lang] or about.bild }}" alt="Nadia Mussner">
+      </div>
+      {% endif %}
+      
+      {% if about['text_' + lang] %}
+      <div class="about-text">
+        {% for absatz in about['text_' + lang] %}
+        <p>{{ absatz }}</p>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

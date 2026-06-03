@@ -1,0 +1,26 @@
+name_de: Tassen
+name_it: Tazze
+name_en: Cups
+slug: tassen
+titelbild:
+  bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/c57a5a72-0bcf-4aa2-9c9a-b9dffb86badb/espresso.jpg?format=1000w
+  alt_de: Tassen
+  alt_it: Tazze
+  alt_en: Cups
+bilder:
+  - bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/c57a5a72-0bcf-4aa2-9c9a-b9dffb86badb/espresso.jpg?format=1000w
+    beschreibung_de: Tazze - Tassen
+    beschreibung_it: Tazze - Tassen
+    beschreibung_en: Tazze - Cups
+  - bild: /images/portfolio/eisbecher.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/espresso.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/tassen(grünblau).jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''

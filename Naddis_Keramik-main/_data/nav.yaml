@@ -1,0 +1,13 @@
+links:
+  - titel_de: Portfolio
+    titel_it: Portfolio
+    titel_en: Portfolio
+    url: index.html
+  - titel_de: Über mich
+    titel_it: Chi sono
+    titel_en: About me
+    url: about.html
+  - titel_de: Kurse
+    titel_it: Corsi
+    titel_en: Courses
+    url: course.html

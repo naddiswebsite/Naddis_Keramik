@@ -1,0 +1,34 @@
+name_de: Töpfe
+name_it: Vasi per piante
+name_en: Pots
+slug: töpfe
+titelbild:
+  bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/5dfd9f18-3877-44cb-be22-1bac4b430b9a/DSC01904.png?format=1000w
+  alt_de: Töpfe
+  alt_it: Pentole
+  alt_en: Pots
+bilder:
+  - bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/5dfd9f18-3877-44cb-be22-1bac4b430b9a/DSC01904.png?format=1000w
+    beschreibung_de: Topf
+    beschreibung_it: Topf
+    beschreibung_en: Pot
+  - bild: /images/portfolio/DSCF7559.png
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/knospe.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/DSC01947.png
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/DSC01804.png
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/DSC01884.png
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''

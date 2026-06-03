@@ -1,0 +1,26 @@
+name_de: Uhren
+name_it: Orologi
+name_en: Clocks
+slug: uhren
+titelbild:
+  bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/e3954770-9f05-4287-a9fd-7f7999700a6e/DSCF9235.jpg?format=1000w
+  alt_de: Uhren
+  alt_it: Orologi
+  alt_en: Clocks
+bilder:
+  - bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/e3954770-9f05-4287-a9fd-7f7999700a6e/DSCF9235.jpg?format=1000w
+    beschreibung_de: Orologi - Uhren
+    beschreibung_it: Orologi - Uhren
+    beschreibung_en: Orologi - Clocks
+  - bild: /images/portfolio/DSCF8616.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/DSCF8620.JPG
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/DSCF9238.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''

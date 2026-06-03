@@ -1,0 +1,50 @@
+name_de: Vasen
+name_it: Vasi
+name_en: Vases
+slug: vasen
+titelbild:
+  bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/cd802727-74f5-4e7c-aacf-6da27b01575e/vasecocoon.jpg?format=1000w
+  alt_de: Vasen
+  alt_it: Vasi
+  alt_en: Vases
+bilder:
+  - bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/cd802727-74f5-4e7c-aacf-6da27b01575e/vasecocoon.jpg?format=1000w
+    beschreibung_de: Vasi - Vasen
+    beschreibung_it: Vasi - Vasen
+    beschreibung_en: Vasi - Vases
+  - bild: /images/portfolio/DSC01998.png
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/DSCF9813.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/DSCF9876.JPG
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/damen.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/ohnovorne.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/tschurtsche.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/vase mit blumen.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/vasemitloch.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/wahl.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''

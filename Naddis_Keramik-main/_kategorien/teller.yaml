@@ -1,0 +1,38 @@
+name_de: Teller
+name_it: Piatti
+name_en: Plates
+slug: teller
+titelbild:
+  bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/ac07b791-6c9a-4dc1-ad71-c2f21a337c10/tELLER+GIACOMETTI.jpg?format=1000w
+  alt_de: Teller
+  alt_it: Piatti
+  alt_en: Plates
+bilder:
+  - bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/ac07b791-6c9a-4dc1-ad71-c2f21a337c10/tELLER+GIACOMETTI.jpg?format=1000w
+    beschreibung_de: Piatti - Teller
+    beschreibung_it: Piatti - Teller
+    beschreibung_en: Piatti - Plates
+  - bild: /images/portfolio/DSCF7953.png
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/DSCF7863.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/DSCF7917.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/DSCF8400.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/DSCF9052.JPG
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/DSCF9061.JPG
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''

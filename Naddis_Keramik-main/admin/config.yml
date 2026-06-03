@@ -1,0 +1,120 @@
+backend:
+  name: github
+  repo: haanness/Naddis_Keramik
+  branch: main
+  base_url: https://decap-auth.hannes-oberparleiter.workers.dev
+
+media_folder: "images/portfolio"
+public_folder: "/images/portfolio"
+
+locale: de
+
+collections:
+
+  # ── Kategorien ──────────────────────────────────────────
+  - name: kategorien
+    label: Kategorien
+    label_singular: Kategorie
+    folder: _kategorien
+    create: true
+    identifier_field: name_de
+    extension: yaml
+    format: yaml
+    fields:
+      - { name: name_de, label: "Name (Deutsch)",    widget: string }
+      - { name: name_it, label: "Name (Italiano)",   widget: string }
+      - { name: name_en, label: "Name (English)",    widget: string }
+      - { name: slug,    label: "URL-Name",           widget: string, hint: "z.B. vasen, lampade — keine Leerzeichen" }
+      - name: titelbild
+        label: Titelbild (Startseite)
+        widget: object
+        fields:
+          - { name: bild,   label: Bild,                   widget: image  }
+          - { name: alt_de, label: Bildbeschreibung (DE),   widget: string }
+          - { name: alt_it, label: Bildbeschreibung (IT),   widget: string }
+          - { name: alt_en, label: Bildbeschreibung (EN),   widget: string }
+      - name: bilder
+        label: Bilder
+        label_singular: Bild
+        widget: list
+        fields:
+          - { name: bild,            label: Bild,                    widget: image  }
+          - { name: beschreibung_de, label: Beschreibung (Deutsch),   widget: string, required: false }
+          - { name: beschreibung_it, label: Descrizione (Italiano),   widget: string, required: false }
+          - { name: beschreibung_en, label: Description (English),    widget: string, required: false }
+
+  # ── Navigation ──────────────────────────────────────────
+  - name: navigation
+    label: Navigation
+    files:
+      - name: nav
+        label: Navigationsleiste
+        file: _data/nav.yaml
+        fields:
+          - name: links
+            label: Links
+            label_singular: Link
+            widget: list
+            fields:
+              - { name: titel_de, label: "Titel (Deutsch)",   widget: string }
+              - { name: titel_it, label: "Titolo (Italiano)",  widget: string }
+              - { name: titel_en, label: "Title (English)",    widget: string }
+              - { name: url,      label: URL,                  widget: string }
+
+  # ── Fixe Seiten ─────────────────────────────────────────
+  - name: fixe-seiten
+    label: Fixe Seiten
+    files:
+
+      - name: about
+        label: About me
+        file: _data/about.yaml
+        fields:
+          - { name: foto, label: Profilfoto, widget: image }
+          - name: text_de
+            label: Text (Deutsch)
+            widget: list
+            label_singular: Absatz
+            fields:
+              - { name: absatz, label: Absatz, widget: text }
+          - name: text_it
+            label: Testo (Italiano)
+            widget: list
+            label_singular: Paragrafo
+            fields:
+              - { name: absatz, label: Paragrafo, widget: text }
+          - name: text_en
+            label: Text (English)
+            widget: list
+            label_singular: Paragraph
+            fields:
+              - { name: absatz, label: Paragraph, widget: text }
+          - { name: email,     label: E-Mail,                      widget: string }
+          - { name: telefon,   label: Telefon,                     widget: string }
+          - { name: instagram, label: "Instagram Handle (ohne @)",  widget: string }
+
+      - name: course
+        label: Kurse / Corsi / Courses
+        file: _data/course.yaml
+        fields:
+          - { name: titel_de, label: "Seitentitel (Deutsch)",  widget: string }
+          - { name: titel_it, label: "Titolo (Italiano)",       widget: string }
+          - { name: titel_en, label: "Page Title (English)",    widget: string }
+          - name: text_de
+            label: Text (Deutsch)
+            widget: list
+            label_singular: Absatz
+            fields:
+              - { name: absatz, label: Absatz, widget: text }
+          - name: text_it
+            label: Testo (Italiano)
+            widget: list
+            label_singular: Paragrafo
+            fields:
+              - { name: absatz, label: Paragrafo, widget: text }
+          - name: text_en
+            label: Text (English)
+            widget: list
+            label_singular: Paragraph
+            fields:
+              - { name: absatz, label: Paragraph, widget: text }

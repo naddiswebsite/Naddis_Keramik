@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% set current_url = 'index.html' %}
+{% set current_file = 'index.html' %}
+{% block title %}Portfolio — Naddi's{% endblock %}
+
+{% block content %}
+<div class="portfolio-container">
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="*">
+      {% if lang == 'de' %}Portfolio{% elif lang == 'it' %}Portfolio{% else %}Portfolio{% endif %}
+    </button>
+    {% for kat in kategorien %}
+    <button class="filter-btn" data-filter="{{ kat.slug }}">
+      {{ kat['name_' + lang] }}
+    </button>
+    {% endfor %}
+  </div>
+
+  <!-- Bilder Grid (Masonry/CSS Columns) -->
+  <div class="gallery-grid">
+    {% for bild in alle_bilder %}
+    <div class="gallery-item" data-category="{{ bild.kategorie_slug }}" data-src="{{ bild.bild }}">
+      <div class="gallery-item-image">
+        <img src="{{ bild.bild }}"
+             alt="{{ bild['beschreibung_' + lang] or bild.kategorie_name_de }}"
+             loading="lazy"
+             onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23eee%22 width=%22400%22 height=%22300%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23999%22>Bild nicht geladen</text></svg>'"
+             onclick="openModal(this.parentElement.parentElement)">
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+let currentImageIndex = 0;
+let visibleImages = [];
+
+document.addEventListener('DOMContentLoaded', function() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const filterValue = this.getAttribute('data-filter');
+      
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      visibleImages = [];
+      galleryItems.forEach((item, index) => {
+        if (filterValue === '*') {
+          item.style.display = 'block';
+          visibleImages.push(item);
+        } else {
+          const itemCategory = item.getAttribute('data-category');
+          if (itemCategory === filterValue) {
+            item.style.display = 'block';
+            visibleImages.push(item);
+          } else {
+            item.style.display = 'none';
+          }
+        }
+      });
+    });
+  });
+
+  visibleImages = Array.from(galleryItems);
+});
+
+function openModal(itemElement) {
+  const modal = document.getElementById('image-modal');
+  const modalImg = document.querySelector('.modal-image');
+  const src = itemElement.getAttribute('data-src');
+  
+  modalImg.src = src;
+  modal.classList.add('active');
+  
+  currentImageIndex = visibleImages.indexOf(itemElement);
+}
+
+function showPrevImage() {
+  if (visibleImages.length === 0) return;
+  currentImageIndex = (currentImageIndex - 1 + visibleImages.length) % visibleImages.length;
+  const item = visibleImages[currentImageIndex];
+  const modalImg = document.querySelector('.modal-image');
+  modalImg.src = item.getAttribute('data-src');
+}
+
+function showNextImage() {
+  if (visibleImages.length === 0) return;
+  currentImageIndex = (currentImageIndex + 1) % visibleImages.length;
+  const item = visibleImages[currentImageIndex];
+  const modalImg = document.querySelector('.modal-image');
+  modalImg.src = item.getAttribute('data-src');
+}
+</script>
+{% endblock %}

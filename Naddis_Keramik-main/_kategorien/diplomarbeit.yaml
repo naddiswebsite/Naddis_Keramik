@@ -1,0 +1,30 @@
+name_de: Diplomarbeit
+name_it: Lavoro di diploma
+name_en: Diploma Thesis
+slug: diplomarbeit
+titelbild:
+  bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/c9f69b93-a479-4d36-9bbf-5c4ad5fa4dfd/blumecloseupmodell.png?format=1000w
+  alt_de: Diplomarbeit
+  alt_it: Lavoro di diploma
+  alt_en: Diploma Thesis
+bilder:
+  - bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/c9f69b93-a479-4d36-9bbf-5c4ad5fa4dfd/blumecloseupmodell.png?format=1000w
+    beschreibung_de: Diplomarbeit
+    beschreibung_it: Diplomarbeit
+    beschreibung_en: Diploma Thesis
+  - bild: /images/portfolio/2023_0427_15565300-2.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/20230316_152442.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/blumeninwelle für dipl.png
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/DSCF4508.png
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
