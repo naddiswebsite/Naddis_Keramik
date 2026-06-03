@@ -11,6 +11,8 @@ with open('_data/about.yaml', encoding='utf-8') as f:
     about = yaml.safe_load(f)
 with open('_data/course.yaml', encoding='utf-8') as f:
     course = yaml.safe_load(f)
+with open('_data/imprint.yaml', encoding='utf-8') as f:
+    imprint = yaml.safe_load(f)
 
 # Alle Kategorien laden und Bilder sammeln
 kategorien = []
@@ -87,7 +89,7 @@ for lang in ['de', 'it', 'en']:
 
     # imprint.html
     with open(f'dist/{lang}/imprint.html', 'w', encoding='utf-8') as f:
-        f.write(env.get_template('imprint.html').render(**ctx))
+        f.write(env.get_template('imprint.html').render(imprint=imprint, **ctx))
     print(f'✓ dist/{lang}/imprint.html')
 
 # Root index.html: leitet zur Browsersprache weiter (DE als Standard)

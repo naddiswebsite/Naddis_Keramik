@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% block title %}Naddi's{% endblock %}</title>
+  <title>{% block title %}{% if lang == 'it' %}Naddis Keramik — Pezzi unici fatti a mano da Selva{% elif lang == 'en' %}Naddis Ceramics — Handmade One-of-a-kind Pieces from Wolkenstein{% else %}Naddis Keramik — Handgemachte Einzelstücke aus Wolkenstein{% endif %}{% endblock %}</title>
   <link rel="alternate" hreflang="de" href="/de/{{ current_file }}">
   <link rel="alternate" hreflang="it" href="/it/{{ current_file }}">
   <link rel="alternate" hreflang="en" href="/en/{{ current_file }}">
+  <link rel="preload" href="/Files/Inter-VariableFont_opsz,wght.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -74,13 +75,13 @@
     </svg>
     naddis_keramik
   </a>
-  <span>Naddis Ceramiche &nbsp;·&nbsp; PARTITA IVA 03307290217</span>
   <a href="/{{ lang }}/imprint.html" class="footer-imprint">Impressum</a>
 </footer>
 
 <div id="image-modal" class="modal">
   <span class="modal-close">&times;</span>
   <button class="modal-nav modal-prev" onclick="showPrevImage()">&lsaquo;</button>
+  <div class="modal-spinner" id="modal-spinner"></div>
   <img class="modal-image" src="" alt="">
   <button class="modal-nav modal-next" onclick="showNextImage()">&rsaquo;</button>
 </div>

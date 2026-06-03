@@ -1,116 +1,27 @@
 {% extends "base.html" %}
 {% set current_url = 'imprint.html' %}
 {% set current_file = 'imprint.html' %}
-{% block title %}Impressum — Naddi's{% endblock %}
+{% block title %}{{ imprint[lang].titel }} — Naddis Keramik{% endblock %}
 
 {% block content %}
 <div class="page-content">
-  <h1>{% if lang == 'de' %}Impressum{% elif lang == 'it' %}Impressum{% else %}Imprint{% endif %}</h1>
-  
-  {% if lang == 'it' %}
+  <h1>{{ imprint[lang].titel }}</h1>
   <div class="imprint-text">
-    <h2>Proprietario e responsabile del sito:</h2>
-    <p>Nadia Mussner<br>
-    Wolkenstein/Selva di Val Gardena<br>
-    39046 Bolzano (BZ), Italia</p>
-
-    <h2>Contatti:</h2>
-    <p>E-mail: naddisceramics@outlook.it<br>
-    Telefono: +39 377 337 7218<br>
-    Instagram: <a href="https://www.instagram.com/naddis_keramik/" target="_blank">@naddis_keramik</a></p>
-
-    <h2>Informazioni fiscali:</h2>
-    <p>Partita IVA: 03307290217</p>
-
-    <h2>Hosting e gestione del sito:</h2>
-    <p>Hosting provider: [PLACEHOLDER: aggiungere provider]<br>
-    Web design: [PLACEHOLDER: aggiungere designer]</p>
-
-    <h2>Responsabilità del contenuto:</h2>
-    <p>Nonostante la cura meticolosa nel controllo dei contenuti, non mi assumo alcuna responsabilità per l'accuratezza, la completezza o la qualità delle informazioni fornite su questo sito. La responsabilità per i contenuti è limitata secondo le disposizioni applicabili della legge.</p>
-
-    <h2>Protezione dei dati:</h2>
-    <p>Per informazioni sulla gestione dei dati personali, consultare la [PLACEHOLDER: privacy policy].</p>
-
-    <h2>Diritti d'autore:</h2>
-    <p>Tutti i contenuti del sito, incluse le immagini, i testi e i design, sono protetti da copyright. La riproduzione, la distribuzione o l'uso non autorizzato è vietato.</p>
-
-    <h2>Marchi:</h2>
-    <p>"Naddis Ceramiche" è un marchio della creatrice Nadia Mussner.</p>
-
-    <h2>Legge applicabile:</h2>
-    <p>Questo sito è soggetto alla legge italiana. Il foro competente è quello di Bolzano.</p>
+    {% for abschnitt in imprint[lang].abschnitte %}
+      {% if abschnitt.titel %}
+      <h2>{{ abschnitt.titel }}</h2>
+      {% endif %}
+      {% for zeile in abschnitt.inhalt.split('\n') %}
+        {% set url_start = zeile.find('(http') %}
+        {% if url_start > -1 %}
+          {% set label = zeile[:url_start].rstrip() %}
+          {% set url = zeile[url_start+1:-1] %}
+          <p>{{ label }} <a href="{{ url }}" target="_blank" rel="noopener">{{ url }}</a></p>
+        {% else %}
+          <p>{{ zeile }}</p>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
   </div>
-
-  {% elif lang == 'en' %}
-  <div class="imprint-text">
-    <h2>Website Owner and Responsible Person:</h2>
-    <p>Nadia Mussner<br>
-    Wolkenstein/Selva di Val Gardena<br>
-    39046 Bolzano (BZ), Italy</p>
-
-    <h2>Contact:</h2>
-    <p>Email: naddisceramics@outlook.it<br>
-    Phone: +39 377 337 7218<br>
-    Instagram: <a href="https://www.instagram.com/naddis_keramik/" target="_blank">@naddis_keramik</a></p>
-
-    <h2>Tax Information:</h2>
-    <p>VAT ID: 03307290217</p>
-
-    <h2>Hosting and Website Management:</h2>
-    <p>Hosting Provider: [PLACEHOLDER: add provider]<br>
-    Web Design: [PLACEHOLDER: add designer]</p>
-
-    <h2>Disclaimer:</h2>
-    <p>Despite careful review of the content, I assume no responsibility for the accuracy, completeness or quality of the information provided on this website. Liability for content is limited in accordance with applicable legal provisions.</p>
-
-    <h2>Data Protection:</h2>
-    <p>For information about the management of personal data, please consult the [PLACEHOLDER: privacy policy].</p>
-
-    <h2>Copyright:</h2>
-    <p>All contents of the website, including images, texts and designs, are protected by copyright. Unauthorized reproduction, distribution or use is prohibited.</p>
-
-    <h2>Trademarks:</h2>
-    <p>"Naddis Ceramiche" is a trademark of artist Nadia Mussner.</p>
-
-    <h2>Applicable Law:</h2>
-    <p>This website is subject to Italian law. The competent court is in Bolzano.</p>
-  </div>
-
-  {% else %}
-  <div class="imprint-text">
-    <h2>Webseitenbetreiber und Verantwortliche Person:</h2>
-    <p>Nadia Mussner<br>
-    Wolkenstein/Gröden<br>
-    39046 Bozen (BZ), Südtirol</p>
-
-    <h2>Kontakt:</h2>
-    <p>E-Mail: naddisceramics@outlook.it<br>
-    Telefon: +39 377 337 7218<br>
-    Instagram: <a href="https://www.instagram.com/naddis_keramik/" target="_blank">@naddis_keramik</a></p>
-
-    <h2>Steuernummer:</h2>
-    <p>Partita IVA: 03307290217</p>
-
-    <h2>Hosting und Webseitenverwaltung:</h2>
-    <p>Hosting Provider: [PLACEHOLDER: Provider eintragen]<br>
-    Web Design: [PLACEHOLDER: Designer eintragen]</p>
-
-    <h2>Haftung für Inhalte:</h2>
-    <p>Trotz sorgfältig überprüfter Inhalte übernehme ich keine Verantwortung für die Richtigkeit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Die Haftung für Inhalte ist nach geltenden Gesetzen begrenzt.</p>
-
-    <h2>Datenschutz:</h2>
-    <p>Für Informationen zur Verwaltung personenbezogener Daten konsultieren Sie bitte die [PLACEHOLDER: Datenschutzerklärung].</p>
-
-    <h2>Urheberrecht:</h2>
-    <p>Alle Inhalte dieser Website, einschließlich Bilder, Texte und Designs, sind urheberrechtlich geschützt. Die unbefugte Vervielfältigung, Verbreitung oder Nutzung ist untersagt.</p>
-
-    <h2>Marken:</h2>
-    <p>"Naddis Ceramiche" ist eine Marke der Künstlerin Nadia Mussner.</p>
-
-    <h2>Anwendbares Recht:</h2>
-    <p>Diese Website unterliegt italienischem Recht. Zuständiges Gericht ist Bozen.</p>
-  </div>
-  {% endif %}
 </div>
 {% endblock %}

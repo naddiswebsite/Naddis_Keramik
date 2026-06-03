@@ -36,14 +36,6 @@ collections:
       - { name: name_it, label: "Name (Italiano)",   widget: string }
       - { name: name_en, label: "Name (English)",    widget: string }
       - { name: slug,    label: "URL-Name",           widget: string, hint: "z.B. vasen, lampade — keine Leerzeichen" }
-      - name: titelbild
-        label: Titelbild (Startseite)
-        widget: object
-        fields:
-          - { name: bild,   label: Bild,                   widget: image  }
-          - { name: alt_de, label: Bildbeschreibung (DE),   widget: string }
-          - { name: alt_it, label: Bildbeschreibung (IT),   widget: string }
-          - { name: alt_en, label: Bildbeschreibung (EN),   widget: string }
       - name: bilder
         label: Bilder
         label_singular: Bild
@@ -129,3 +121,44 @@ collections:
             label_singular: Paragraph
             fields:
               - { name: absatz, label: Paragraph, widget: text }
+
+      - name: impressum
+        label: Impressum
+        file: _data/imprint.yaml
+        fields:
+          - name: de
+            label: Impressum (Deutsch)
+            widget: object
+            fields:
+              - { name: titel, label: Seitentitel, widget: string, default: Impressum }
+              - name: abschnitte
+                label: Abschnitte
+                label_singular: Abschnitt
+                widget: list
+                fields:
+                  - { name: titel,  label: Überschrift, widget: string, required: false }
+                  - { name: inhalt, label: Inhalt,       widget: text }
+          - name: it
+            label: Impressum (Italiano)
+            widget: object
+            fields:
+              - { name: titel, label: Titolo pagina, widget: string, default: Impressum }
+              - name: abschnitte
+                label: Sezioni
+                label_singular: Sezione
+                widget: list
+                fields:
+                  - { name: titel,  label: Titolo,    widget: string, required: false }
+                  - { name: inhalt, label: Contenuto, widget: text }
+          - name: en
+            label: Imprint (English)
+            widget: object
+            fields:
+              - { name: titel, label: Page title, widget: string, default: Imprint }
+              - name: abschnitte
+                label: Sections
+                label_singular: Section
+                widget: list
+                fields:
+                  - { name: titel,  label: Heading, widget: string, required: false }
+                  - { name: inhalt, label: Content, widget: text }
