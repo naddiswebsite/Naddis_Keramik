@@ -3,24 +3,24 @@ name_it: Tazze
 name_en: Cups
 slug: tassen
 titelbild:
-  bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/c57a5a72-0bcf-4aa2-9c9a-b9dffb86badb/espresso.jpg?format=1000w
+  bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/espresso_g9fvyo
   alt_de: Tassen
   alt_it: Tazze
   alt_en: Cups
 bilder:
-  - bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/c57a5a72-0bcf-4aa2-9c9a-b9dffb86badb/espresso.jpg?format=1000w
-    beschreibung_de: Tazze - Tassen
-    beschreibung_it: Tazze - Tassen
-    beschreibung_en: Tazze - Cups
-  - bild: /images/portfolio/eisbecher.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/espresso.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/tassen(grünblau).jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/espresso_g9fvyo
+  beschreibung_de: Tazze - Tassen
+  beschreibung_it: Tazze - Tassen
+  beschreibung_en: Tazze - Cups
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/eisbecher_miudjt
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/espresso_g9fvyo
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/tassen_grünblau_stltkw
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''

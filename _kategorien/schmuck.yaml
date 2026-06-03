@@ -3,24 +3,24 @@ name_it: Gioielli
 name_en: Jewellery
 slug: schmuck
 titelbild:
-  bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/38a51756-9870-4c10-8baa-a7eecdc60c13/DSCF0508.JPG?format=1000w
+  bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF0508_nhlspe
   alt_de: Schmuck
   alt_it: Gioielli
   alt_en: Jewellery
 bilder:
-  - bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/38a51756-9870-4c10-8baa-a7eecdc60c13/DSCF0508.JPG?format=1000w
-    beschreibung_de: Schmuck
-    beschreibung_it: Schmuck
-    beschreibung_en: Jewellery
-  - bild: /images/portfolio/DSCF0495.JPG
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/DSCF0499.JPG
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/DSCF0494.JPG
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF0508_nhlspe
+  beschreibung_de: Schmuck
+  beschreibung_it: Schmuck
+  beschreibung_en: Jewellery
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF0495_phueq6
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF0499_btqck0
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF0494_bi7cre
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''

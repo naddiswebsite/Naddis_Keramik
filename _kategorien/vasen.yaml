@@ -3,48 +3,48 @@ name_it: Vasi
 name_en: Vases
 slug: vasen
 titelbild:
-  bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/cd802727-74f5-4e7c-aacf-6da27b01575e/vasecocoon.jpg?format=1000w
+  bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/vasecocoon_fm6i8u
   alt_de: Vasen
   alt_it: Vasi
   alt_en: Vases
 bilder:
-  - bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/cd802727-74f5-4e7c-aacf-6da27b01575e/vasecocoon.jpg?format=1000w
-    beschreibung_de: Vasi - Vasen
-    beschreibung_it: Vasi - Vasen
-    beschreibung_en: Vasi - Vases
-  - bild: /images/portfolio/DSC01998.png
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/DSCF9813.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/DSCF9876.JPG
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/damen.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/ohnovorne.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/tschurtsche.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/vase mit blumen.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/vasemitloch.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/wahl.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/vasecocoon_fm6i8u
+  beschreibung_de: Vasi - Vasen
+  beschreibung_it: Vasi - Vasen
+  beschreibung_en: Vasi - Vases
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSC01998_yyfm9i
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF9813_qdppuv
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF9876_x9hfrt
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/damen_klcvrm
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/ohnovorne_mdzxs0
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/tschurtsche_kjof3m
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/vase_mit_blumen_iozzye
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/vasemitloch_rruz7d
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/wahl_d1dpp5
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''

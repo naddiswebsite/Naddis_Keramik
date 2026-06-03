@@ -3,28 +3,28 @@ name_it: Figure & forme
 name_en: Figures & Shapes
 slug: figure-forme
 titelbild:
-  bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/7e8f2c5f-c51b-4fc1-a286-84a13f72d0df/maske.jpg?format=1000w
+  bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/maske_vy5uzn
   alt_de: Figuren & Formen
   alt_it: Figure & forme
   alt_en: Figures & Shapes
 bilder:
-  - bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/7e8f2c5f-c51b-4fc1-a286-84a13f72d0df/maske.jpg?format=1000w
-    beschreibung_de: Figure & forme
-    beschreibung_it: Figure & forme
-    beschreibung_en: Figures & Shapes
-  - bild: /images/portfolio/DSCF0546.JPG
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/DSCF9143.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/kugelfisch.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/maskenadia.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/maske_vy5uzn
+  beschreibung_de: Figure & forme
+  beschreibung_it: Figure & forme
+  beschreibung_en: Figures & Shapes
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF0546_n6qjyg
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF9143_kff6au
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/kugelfisch_lq14zc
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/maskenadia_nhb8ku
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''

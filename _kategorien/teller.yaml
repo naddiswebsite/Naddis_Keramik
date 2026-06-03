@@ -3,36 +3,36 @@ name_it: Piatti
 name_en: Plates
 slug: teller
 titelbild:
-  bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/ac07b791-6c9a-4dc1-ad71-c2f21a337c10/tELLER+GIACOMETTI.jpg?format=1000w
+  bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/tELLER_GIACOMETTI_gx1mvb
   alt_de: Teller
   alt_it: Piatti
   alt_en: Plates
 bilder:
-  - bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/ac07b791-6c9a-4dc1-ad71-c2f21a337c10/tELLER+GIACOMETTI.jpg?format=1000w
-    beschreibung_de: Piatti - Teller
-    beschreibung_it: Piatti - Teller
-    beschreibung_en: Piatti - Plates
-  - bild: /images/portfolio/DSCF7953.png
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/DSCF7863.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/DSCF7917.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/DSCF8400.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/DSCF9052.JPG
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/DSCF9061.JPG
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/tELLER_GIACOMETTI_gx1mvb
+  beschreibung_de: Piatti - Teller
+  beschreibung_it: Piatti - Teller
+  beschreibung_en: Piatti - Plates
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF7953_yxyueh
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF7863_bokusz
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF7917_rgmucw
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF8400_m5xpm4
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF9052_kxg36h
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF9061_cebond
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''

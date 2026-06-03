@@ -3,24 +3,24 @@ name_it: Lampade
 name_en: Lamps
 slug: lampen
 titelbild:
-  bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/2f7017b4-4f87-40b6-952d-f98b9bdd4e7d/DSCF0533.JPG?format=1000w
+  bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF0533_abiq1y
   alt_de: Lampen
   alt_it: Lampade
   alt_en: Lamps
 bilder:
-  - bild: https://images.squarespace-cdn.com/content/v1/6a021c65c0ade452f35f0aa9/2f7017b4-4f87-40b6-952d-f98b9bdd4e7d/DSCF0533.JPG?format=1000w
-    beschreibung_de: Lampen
-    beschreibung_it: Lampen
-    beschreibung_en: Lamps
-  - bild: /images/portfolio/lampeblume-ausschnitt.jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/DSC01846.png
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
-  - bild: /images/portfolio/hängelampe.det..jpg
-    beschreibung_de: ''
-    beschreibung_it: ''
-    beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSCF0533_abiq1y
+  beschreibung_de: Lampen
+  beschreibung_it: Lampen
+  beschreibung_en: Lamps
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/lampeblume-ausschnitt_tq9suj
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/DSC01846_zyex7k
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
+- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/portfolio/hängelampe.det._jg98kc
+  beschreibung_de: ''
+  beschreibung_it: ''
+  beschreibung_en: ''
