@@ -1,8 +1,19 @@
 backend:
   name: github
-  repo: haanness/Naddis_Keramik
+  repo: naddiswebsite/Naddis_Keramik
   branch: main
-  base_url: https://decap-auth.hannes-oberparleiter.workers.dev
+  base_url: https://square-boat-6198.naddiswebsite.workers.dev
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dqww81axk
+    api_key: 862642912854559
+    default_transformations:
+      - - fetch_format: auto
+          quality: auto
+          width: 1800
+          crop: limit
 
 media_folder: "images/portfolio"
 public_folder: "/images/portfolio"
