@@ -5,17 +5,17 @@
 
 {% block content %}
 <div class="page-content">
-  <h1>{% if lang == 'de' %}Über mich{% elif lang == 'it' %}Chi sono{% else %}About{% endif %}</h1>
   {% if about %}
     <div class="about-wrapper">
       {% if about['bild_' + lang] or about.bild %}
       <div class="about-image">
-        <img src="{{ about['bild_' + lang] or about.bild }}" alt="Nadia Mussner">
+        <img src="{{ about['bild_' + lang] or about.bild }}" alt="Nadia Mussner" loading="lazy" decoding="async">
       </div>
       {% endif %}
       
       {% if about['text_' + lang] %}
       <div class="about-text">
+        <h1>{% if lang == 'de' %}Über mich{% elif lang == 'it' %}Chi sono{% else %}About{% endif %}</h1>
         {% for absatz in about['text_' + lang] %}
         <p>{{ absatz }}</p>
         {% endfor %}
