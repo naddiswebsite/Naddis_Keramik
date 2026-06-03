@@ -1,0 +1,18 @@
+import yaml, os, requests
+from pathlib import Path
+
+output = Path("squarespace_downloads")
+output.mkdir(exist_ok=True)
+
+for fname in os.listdir("_kategorien"):
+    if not fname.endswith(".yaml"): continue
+    data = yaml.safe_load(open(f"_kategorien/{fname}"))
+    
+    bilder = [data["titelbild"]["bild"]] + [b["bild"] for b in data.get("bilder", [])]
+    
+    for url in bilder:
+        if "squarespace" not in url: continue
+        filename = url.split("/")[-1].split("?")[0]
+        r = requests.get(url)
+        (output / filename).write_bytes(r.content)
+        print(f"✓ {filename}")
