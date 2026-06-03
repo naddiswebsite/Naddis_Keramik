@@ -40,7 +40,7 @@ img { display: block; max-width: 100%; height: auto; }
 ============================================= */
 
 .site-header {
-  padding: 12px var(--gap);
+  padding: 0 var(--gap);
 }
 
 .header-container {
@@ -48,17 +48,18 @@ img { display: block; max-width: 100%; height: auto; }
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 3rem;
+  align-items: flex-start;
+  gap: 2rem;
   position: relative;
 }
 
 .header-logo {
   flex-shrink: 0;
+  margin-left: -12px;
 }
 
 .logo-svg {
-  height: 70px;
+  height: 100px;
   width: auto;
   fill: var(--dark);
 }
@@ -66,14 +67,15 @@ img { display: block; max-width: 100%; height: auto; }
 .header-nav {
   flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
+  padding-top: 14px;
 }
 
 .header-nav-links {
   display: flex;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 .header-nav-links a {
@@ -559,7 +561,7 @@ main {
   }
 
   .logo-svg {
-    height: 50px;
+    height: 70px;
   }
 
   .page-content h1 {
