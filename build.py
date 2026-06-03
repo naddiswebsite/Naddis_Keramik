@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import yaml, os, shutil
+import yaml, os, shutil, re
 from jinja2 import Environment, FileSystemLoader
 
 env = Environment(loader=FileSystemLoader('_templates'), autoescape=True)
@@ -13,6 +13,14 @@ with open('_data/course.yaml', encoding='utf-8') as f:
     course = yaml.safe_load(f)
 with open('_data/imprint.yaml', encoding='utf-8') as f:
     imprint = yaml.safe_load(f)
+
+import re
+
+def cloudinary_resize(url, width):
+    """Replace w_XXXX in a Cloudinary URL with a new width."""
+    return re.sub(r'w_\d+', f'w_{width}', url)
+
+env.globals['cloudinary_resize'] = cloudinary_resize
 
 # Alle Kategorien laden und Bilder sammeln
 kategorien = []
