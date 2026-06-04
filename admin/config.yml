@@ -107,7 +107,8 @@ collections:
           - { name: text_it,  label: "Testo (Italiano)",  widget: text,   required: false }
           - { name: text_en,  label: "Text (English)",    widget: text,   required: false }
 
-      - name: impressum        label: Impressum
+      - name: impressum
+        label: Impressum
         file: _data/imprint.yaml
         fields:
           - name: de
