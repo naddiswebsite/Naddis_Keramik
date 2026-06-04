@@ -11,9 +11,9 @@
         <h1>{% if lang == 'de' %}Über mich{% elif lang == 'it' %}Chi sono{% else %}About{% endif %}</h1>
       </div>
 
-      {% if about['bild_' + lang] or about.bild %}
+      {% if about.foto or about.bild %}
       <div class="about-image">
-        <img src="{{ about['bild_' + lang] or about.bild }}" alt="Nadia Mussner" loading="lazy" decoding="async">
+        <img src="{{ about.foto or about.bild }}" alt="Nadia Mussner" loading="lazy" decoding="async">
       </div>
       {% endif %}
 
@@ -26,6 +26,7 @@
       {% endif %}
 
       <div class="about-contact">
+        <h2>{% if lang == 'de' %}Kontakt{% elif lang == 'it' %}Contatto{% else %}Contact{% endif %}</h2>
         {% if about.email %}<p><a href="mailto:{{ about.email }}">{{ about.email }}</a></p>{% endif %}
         {% if about.telefon %}<p><a href="tel:{{ about.telefon }}">{{ about.telefon }}</a></p>{% endif %}
         {% if about.instagram %}<p><a href="https://www.instagram.com/{{ about.instagram }}/" target="_blank" rel="noopener">@{{ about.instagram }}</a></p>{% endif %}

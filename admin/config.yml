@@ -73,9 +73,7 @@ collections:
         label: About me
         file: _data/about.yaml
         fields:
-          - { name: bild_de, label: "Profilfoto (DE)", widget: image }
-          - { name: bild_it, label: "Profilfoto (IT)", widget: image }
-          - { name: bild_en, label: "Profilfoto (EN)", widget: image }
+          - { name: foto, label: "Profilfoto", widget: image }
           - { name: text_de, label: "Text (Deutsch)",   widget: list, label_singular: Absatz, field: { name: item, label: Absatz, widget: text } }
           - { name: text_it, label: "Testo (Italiano)", widget: list, label_singular: Paragrafo, field: { name: item, label: Paragrafo, widget: text } }
           - { name: text_en, label: "Text (English)",   widget: list, label_singular: Paragraph, field: { name: item, label: Paragraph, widget: text } }
