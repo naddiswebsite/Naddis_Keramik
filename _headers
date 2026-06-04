@@ -1,4 +1,4 @@
 /admin/*
   Cache-Control: no-store, no-cache, must-revalidate
   Pragma: no-cache
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; connect-src 'self' https://api.github.com https://square-boat-6198.naddiswebsite.workers.dev https://res.cloudinary.com https://api.cloudinary.com; img-src 'self' data: blob: https://res.cloudinary.com; font-src 'self' data: https://cdn.jsdelivr.net; frame-src 'none'; worker-src blob:
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' data: https://cdn.jsdelivr.net https://fonts.gstatic.com; connect-src 'self' https://api.github.com https://square-boat-6198.naddiswebsite.workers.dev https://res.cloudinary.com https://api.cloudinary.com; img-src 'self' data: blob: https://res.cloudinary.com; frame-src 'none'; worker-src blob:
