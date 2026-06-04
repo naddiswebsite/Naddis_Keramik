@@ -17,14 +17,10 @@
     {% endfor %}
   </div>
 
-  <!-- Kategorienbeschreibung (nur wenn vorhanden) -->
-  <div class="kat-beschreibung-wrapper" id="kat-beschreibung" style="display:none;">
-    <div class="kat-beschreibung-spacer"></div>
-    <div class="kat-beschreibung-text subpage-content"></div>
-  </div>
-
-  <!-- Bilder Grid (Masonry/CSS Columns) -->
-  <div class="gallery-grid">
+  <!-- Gallery + optionaler Beschreibungstext nebeneinander -->
+  <div class="gallery-with-desc" id="gallery-with-desc">
+    <!-- Bilder Grid (Masonry/CSS Columns) -->
+    <div class="gallery-grid" id="gallery-grid">
     {% for bild in alle_bilder %}
     <div class="gallery-item" data-category="{{ bild.kategorie_slug }}" data-src="{{ bild.bild }}" data-beschreibung="{{ bild['beschreibung_' + lang] or '' }}">
       <div class="gallery-item-image">
@@ -37,6 +33,9 @@
       </div>
     </div>
     {% endfor %}
+  </div>
+    <!-- Beschreibungstext rechte Spalte -->
+    <div class="kat-beschreibung-text subpage-content" id="kat-beschreibung" style="display:none;"></div>
   </div>
 </div>
 
@@ -54,8 +53,8 @@ const katBeschreibungen = {
 document.addEventListener('DOMContentLoaded', function() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const galleryItems = document.querySelectorAll('.gallery-item');
-  const beschreibungWrapper = document.getElementById('kat-beschreibung');
-  const beschreibungText = document.querySelector('.kat-beschreibung-text');
+  const galleryWithDesc = document.getElementById('gallery-with-desc');
+  const beschreibungEl = document.getElementById('kat-beschreibung');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', function() {
@@ -66,10 +65,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Beschreibung
       if (filterValue !== '*' && katBeschreibungen[filterValue]) {
-        beschreibungText.textContent = katBeschreibungen[filterValue];
-        beschreibungWrapper.style.display = '';
+        beschreibungEl.textContent = katBeschreibungen[filterValue];
+        beschreibungEl.style.display = '';
+        galleryWithDesc.classList.add('has-description');
       } else {
-        beschreibungWrapper.style.display = 'none';
+        beschreibungEl.style.display = 'none';
+        galleryWithDesc.classList.remove('has-description');
       }
 
       visibleImages = [];
