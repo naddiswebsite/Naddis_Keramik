@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileNavClose = document.querySelector('.mobile-nav-close');
   const modal = document.getElementById('image-modal');
   const modalClose = document.querySelector('.modal-close');
+  const modalPrev = document.querySelector('.modal-prev');
+  const modalNext = document.querySelector('.modal-next');
 
   if (burger && mobileNav) {
     burger.addEventListener('click', function() {
@@ -48,6 +50,32 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (e.key === 'ArrowRight') {
         showNextImage();
       }
+    });
+  }
+
+  // Modal-Navigation Buttons (nur auf Seiten mit Gallery vorhanden)
+  if (modalPrev) {
+    modalPrev.addEventListener('click', function() {
+      if (typeof showPrevImage === 'function') showPrevImage();
+    });
+  }
+  if (modalNext) {
+    modalNext.addEventListener('click', function() {
+      if (typeof showNextImage === 'function') showNextImage();
+    });
+  }
+
+  // News-Popup schließen
+  const newsPopupClose = document.querySelector('.news-popup-close');
+  if (newsPopupClose) {
+    newsPopupClose.addEventListener('click', function() {
+      const popup = document.getElementById('news-popup');
+      if (!popup) return;
+      popup.classList.add('is-closing');
+      popup.addEventListener('animationend', function() {
+        popup.style.display = 'none';
+        sessionStorage.setItem('news-popup-seen', '1');
+      }, { once: true });
     });
   }
 });

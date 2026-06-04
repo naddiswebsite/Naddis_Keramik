@@ -19,8 +19,6 @@ if os.path.exists('_data/news.yaml'):
     with open('_data/news.yaml', encoding='utf-8') as f:
         news = yaml.safe_load(f) or {}
 
-import re
-
 def cloudinary_resize(url, width):
     """Replace w_XXXX in a Cloudinary URL with a new width."""
     return re.sub(r'w_\d+', f'w_{width}', url)
