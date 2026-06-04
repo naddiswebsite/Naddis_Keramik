@@ -220,6 +220,8 @@ main {
 
 .portfolio-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Filter Buttons */
@@ -257,6 +259,24 @@ main {
 }
 
 /* Gallery Grid (Masonry mit CSS Columns) */
+.kat-beschreibung-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.kat-beschreibung-spacer {
+  grid-column: 1 / 3;
+}
+
+.kat-beschreibung-text {
+  grid-column: 3;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: var(--dark);
+}
+
 .gallery-grid {
   column-count: 3;
   column-gap: 24px;
@@ -631,6 +651,19 @@ main {
   .gallery-grid {
     column-count: 1;
     column-gap: 0;
+  }
+
+  .kat-beschreibung-wrapper {
+    grid-template-columns: 1fr;
+    order: -1;
+  }
+
+  .kat-beschreibung-spacer {
+    display: none;
+  }
+
+  .kat-beschreibung-text {
+    grid-column: 1;
   }
 
   .gallery-item {
