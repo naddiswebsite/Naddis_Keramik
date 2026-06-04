@@ -73,25 +73,12 @@ collections:
         label: About me
         file: _data/about.yaml
         fields:
-          - { name: foto, label: Profilfoto, widget: image }
-          - name: text_de
-            label: Text (Deutsch)
-            widget: list
-            label_singular: Absatz
-            fields:
-              - { name: absatz, label: Absatz, widget: text }
-          - name: text_it
-            label: Testo (Italiano)
-            widget: list
-            label_singular: Paragrafo
-            fields:
-              - { name: absatz, label: Paragrafo, widget: text }
-          - name: text_en
-            label: Text (English)
-            widget: list
-            label_singular: Paragraph
-            fields:
-              - { name: absatz, label: Paragraph, widget: text }
+          - { name: bild_de, label: "Profilfoto (DE)", widget: image }
+          - { name: bild_it, label: "Profilfoto (IT)", widget: image }
+          - { name: bild_en, label: "Profilfoto (EN)", widget: image }
+          - { name: text_de, label: "Text (Deutsch)",   widget: list, label_singular: Absatz, field: { name: item, label: Absatz, widget: text } }
+          - { name: text_it, label: "Testo (Italiano)", widget: list, label_singular: Paragrafo, field: { name: item, label: Paragrafo, widget: text } }
+          - { name: text_en, label: "Text (English)",   widget: list, label_singular: Paragraph, field: { name: item, label: Paragraph, widget: text } }
           - { name: email,     label: E-Mail,                      widget: string }
           - { name: telefon,   label: Telefon,                     widget: string }
           - { name: instagram, label: "Instagram Handle (ohne @)",  widget: string }
@@ -103,24 +90,9 @@ collections:
           - { name: titel_de, label: "Seitentitel (Deutsch)",  widget: string }
           - { name: titel_it, label: "Titolo (Italiano)",       widget: string }
           - { name: titel_en, label: "Page Title (English)",    widget: string }
-          - name: text_de
-            label: Text (Deutsch)
-            widget: list
-            label_singular: Absatz
-            fields:
-              - { name: absatz, label: Absatz, widget: text }
-          - name: text_it
-            label: Testo (Italiano)
-            widget: list
-            label_singular: Paragrafo
-            fields:
-              - { name: absatz, label: Paragrafo, widget: text }
-          - name: text_en
-            label: Text (English)
-            widget: list
-            label_singular: Paragraph
-            fields:
-              - { name: absatz, label: Paragraph, widget: text }
+          - { name: text_de, label: "Text (Deutsch)",   widget: list, label_singular: Absatz, field: { name: item, label: Absatz, widget: text } }
+          - { name: text_it, label: "Testo (Italiano)", widget: list, label_singular: Paragrafo, field: { name: item, label: Paragrafo, widget: text } }
+          - { name: text_en, label: "Text (English)",   widget: list, label_singular: Paragraph, field: { name: item, label: Paragraph, widget: text } }
 
       - name: impressum
         label: Impressum

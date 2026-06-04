@@ -24,6 +24,12 @@
         {% endfor %}
       </div>
       {% endif %}
+
+      <div class="about-contact">
+        {% if about.email %}<p><a href="mailto:{{ about.email }}">{{ about.email }}</a></p>{% endif %}
+        {% if about.telefon %}<p><a href="tel:{{ about.telefon }}">{{ about.telefon }}</a></p>{% endif %}
+        {% if about.instagram %}<p><a href="https://www.instagram.com/{{ about.instagram }}/" target="_blank" rel="noopener">@{{ about.instagram }}</a></p>{% endif %}
+      </div>
     </div>
   {% endif %}
 </div>

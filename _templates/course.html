@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% set current_url = 'course.html' %}
 {% set current_file = 'course.html' %}
-{% block title %}Workshops — Naddi's{% endblock %}
+{% block title %}{{ course['titel_' + lang] }} — Naddi's{% endblock %}
 
 {% block content %}
 <div class="page-content page-content--left">
@@ -9,7 +9,7 @@
     {% if course['text_' + lang] %}
     <div class="subpage-wrapper">
       <div class="subpage-col-left">
-        <h1>{% if lang == 'de' %}Workshops{% elif lang == 'it' %}Corsi{% else %}Workshops{% endif %}</h1>
+        <h1>{{ course['titel_' + lang] }}</h1>
       </div>
       <div class="subpage-content course-text">
         {% for absatz in course['text_' + lang] %}
