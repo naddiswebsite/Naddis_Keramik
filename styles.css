@@ -429,8 +429,34 @@ main {
   display: block;
 }
 
-.about-text {
+.about-right {
   grid-column: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-text {
+  /* no grid-column needed, sits inside about-right */
+}
+
+.about-contact h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-contact p {
+  margin-bottom: 0.5rem;
+}
+
+.about-contact a {
+  color: var(--dark);
+  transition: opacity 0.3s;
+}
+
+.about-contact a:hover {
+  opacity: 0.6;
 }
 
 .about-text h1 {
@@ -441,7 +467,7 @@ main {
 
 .about-text,
 .course-text {
-  line-height: 1.8;
+  line-height: 1.6;
   font-size: 1rem;
   color: var(--dark);
 }
@@ -480,7 +506,7 @@ main {
 }
 
 .imprint-text {
-  line-height: 1.8;
+  line-height: 1.6;
   font-size: 1rem;
   color: var(--dark);
 }
@@ -518,12 +544,27 @@ main {
   padding: 20px var(--gap);
   margin-top: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
-  text-align: center;
   font-size: 0.9rem;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-contact-item {
+  color: var(--dark);
+  transition: opacity 0.3s;
+}
+
+.footer-contact-item:hover {
+  opacity: 0.6;
 }
 
 .footer-instagram {
@@ -616,7 +657,7 @@ main {
   }
 
   .about-col-left,
-  .about-text,
+  .about-right,
   .about-image {
     grid-column: 1;
   }
@@ -632,6 +673,7 @@ main {
 
   .site-footer {
     flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
   }
 

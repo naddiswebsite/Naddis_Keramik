@@ -75,6 +75,7 @@ for lang in ['de', 'it', 'en']:
     
     ctx = dict(
         nav=nav,
+        about=about,
         kategorien=kategorien,
         alle_bilder=alle_bilder_shuffled,
         lang=lang
