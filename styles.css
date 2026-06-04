@@ -3,8 +3,8 @@
 ============================================= */
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/Files/Inter-VariableFont_opsz,wght.ttf') format('truetype-variations');
+  font-family: 'Miranda';
+  src: url('/Files/MirandaSans-VariableFont_wght.ttf') format('truetype-variations');
   font-weight: 100 900;
 }
 
@@ -22,7 +22,7 @@
 html { font-size: 16px; scroll-behavior: smooth; }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Miranda', sans-serif;
   font-weight: 400;
   color: var(--dark);
   background: var(--white);
@@ -236,7 +236,7 @@ main {
   background: transparent;
   border: 2px solid #ccc;
   color: var(--dark);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Miranda', sans-serif;
   font-size: 0.95rem;
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -400,20 +400,24 @@ main {
 
 .about-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
   align-items: start;
 }
 
 .about-image {
   width: 100%;
-  padding-top: 3.5rem;
+  padding-top: 0;
 }
 
 .about-image img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.about-text {
+  grid-column: span 2;
 }
 
 .about-text h1 {
@@ -573,6 +577,10 @@ main {
   .about-wrapper {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .about-text {
+    grid-column: span 1;
   }
 
   .site-footer {
