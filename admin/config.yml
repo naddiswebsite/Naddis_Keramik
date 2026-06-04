@@ -10,7 +10,6 @@ media_library:
   config:
     cloud_name: dqww81axk
     api_key: 862642912854559
-    upload_preset: Naddis Bilder
     default_transformations:
       - - fetch_format: auto
           quality: auto
