@@ -1,6 +1,4 @@
-bild_de: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/20260509_145600_g492oq
-bild_it: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/20260509_145600_g492oq
-bild_en: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/20260509_145600_g492oq
+foto: https://res.cloudinary.com/dqww81axk/image/upload/c_limit,f_auto,q_auto,w_1800/v1780489111/20260509_145600_g492oq.jpg
 text_de:
   - Mein Name ist Nadia Mussner, ich bin im Jahr 2000 geboren und lebe in Gröden.
   - Nach meiner Matura an der Kunstschule besuchte ich die Ortweinschule in Graz, wo ich die Meisterklasse für Kunst und Design mit Schwerpunkt Keramikmodellierung absolvierte. Seitdem bin ich in mein Heimatdorf Wolkenstein in Gröden zurückgekehrt, wo ich nun an meinen Werken arbeite.
@@ -19,3 +17,6 @@ text_en:
 email: naddisceramics@outlook.it
 telefon: +39 377 337 7218
 instagram: naddis_keramik
+bild_en: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/20260509_145600_g492oq
+bild_it: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/20260509_145600_g492oq
+bild_de: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/20260509_145600_g492oq
