@@ -9,9 +9,7 @@ media_library:
   output_filename_override: true
   config:
     cloud_name: dqww81axk
-    # api_key wird für unsigned uploads nicht benötigt und sollte nicht
-    # im öffentlichen Repository stehen. Nur eintragen wenn Sveltia CMS
-    # dies explizit für eine bestimmte Funktion erfordert.
+    api_key: 862642912854559
     default_transformations:
       - - fetch_format: auto
           quality: auto
