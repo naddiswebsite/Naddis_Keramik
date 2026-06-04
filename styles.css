@@ -790,7 +790,7 @@ main {
   background: var(--accent);
   padding: 28px 28px 24px;
   z-index: 1000;
-  text-align: right;
+  text-align: left;
 }
 
 .news-popup-close {
