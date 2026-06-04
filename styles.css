@@ -265,7 +265,7 @@ main {
 
 .gallery-with-desc.has-description {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   align-items: start;
 }
@@ -275,6 +275,7 @@ main {
 }
 
 .gallery-with-desc.has-description .gallery-grid {
+  grid-column: 1 / 3;
   column-count: 2;
 }
 
