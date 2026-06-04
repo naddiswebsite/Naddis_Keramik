@@ -88,7 +88,7 @@ for lang in ['de', 'it', 'en']:
 
     # about.html
     with open(f'dist/{lang}/about.html', 'w', encoding='utf-8') as f:
-        f.write(env.get_template('about.html').render(about=about, **ctx))
+        f.write(env.get_template('about.html').render(**ctx))
     print(f'✓ dist/{lang}/about.html')
 
     # course.html

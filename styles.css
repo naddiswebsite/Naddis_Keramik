@@ -440,6 +440,11 @@ main {
   /* no grid-column needed, sits inside about-right */
 }
 
+.about-contact {
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
 .about-contact h2 {
   font-size: 1.1rem;
   font-weight: 600;
