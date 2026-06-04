@@ -17,14 +17,8 @@ de:
       inhalt: |-
         Hosting Provider: [PLACEHOLDER: Provider eintragen]
         Web Design: [PLACEHOLDER: Designer eintragen]
-    - titel: Haftung für Inhalte
-      inhalt: Trotz sorgfältig überprüfter Inhalte übernehme ich keine Verantwortung für die Richtigkeit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Die Haftung für Inhalte ist nach geltenden Gesetzen begrenzt.
-    - titel: Datenschutz
-      inhalt: 'Für Informationen zur Verwaltung personenbezogener Daten konsultieren Sie bitte die [PLACEHOLDER: Datenschutzerklärung].'
     - titel: Urheberrecht
       inhalt: Alle Inhalte dieser Website, einschließlich Bilder, Texte und Designs, sind urheberrechtlich geschützt. Die unbefugte Vervielfältigung, Verbreitung oder Nutzung ist untersagt.
-    - titel: Marken
-      inhalt: '"Naddis Ceramiche" ist eine Marke der Künstlerin Nadia Mussner.'
 it:
   titel: Impressum
   abschnitte:
@@ -44,16 +38,8 @@ it:
       inhalt: |-
         Hosting provider: [PLACEHOLDER: aggiungere provider]
         Web design: [PLACEHOLDER: aggiungere designer]
-    - titel: Responsabilità del contenuto
-      inhalt: Nonostante la cura meticolosa nel controllo dei contenuti, non mi assumo alcuna responsabilità per l'accuratezza, la completezza o la qualità delle informazioni fornite su questo sito. La responsabilità per i contenuti è limitata secondo le disposizioni applicabili della legge.
-    - titel: Protezione dei dati
-      inhalt: 'Per informazioni sulla gestione dei dati personali, consultare la [PLACEHOLDER: privacy policy].'
     - titel: Diritti d'autore
       inhalt: Tutti i contenuti del sito, incluse le immagini, i testi e i design, sono protetti da copyright. La riproduzione, la distribuzione o l'uso non autorizzato è vietato.
-    - titel: Marchi
-      inhalt: '"Naddis Ceramiche" è un marchio della creatrice Nadia Mussner.'
-    - titel: Legge applicabile
-      inhalt: Questo sito è soggetto alla legge italiana. Il foro competente è quello di Bolzano.
 en:
   titel: Imprint
   abschnitte:
@@ -73,13 +59,5 @@ en:
       inhalt: |-
         Hosting Provider: [PLACEHOLDER: add provider]
         Web Design: [PLACEHOLDER: add designer]
-    - titel: Disclaimer
-      inhalt: Despite careful review of the content, I assume no responsibility for the accuracy, completeness or quality of the information provided on this website. Liability for content is limited in accordance with applicable legal provisions.
-    - titel: Data Protection
-      inhalt: 'For information about the management of personal data, please consult the [PLACEHOLDER: privacy policy].'
     - titel: Copyright
       inhalt: All contents of the website, including images, texts and designs, are protected by copyright. Unauthorized reproduction, distribution or use is prohibited.
-    - titel: Trademarks
-      inhalt: '"Naddis Ceramiche" is a trademark of artist Nadia Mussner.'
-    - titel: Applicable Law
-      inhalt: This website is subject to Italian law. The competent court is in Bolzano.
