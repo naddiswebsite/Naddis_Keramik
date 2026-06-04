@@ -6,6 +6,7 @@ backend:
 
 media_library:
   name: cloudinary
+  output_filename_override: true
   config:
     cloud_name: dqww81axk
     api_key: 862642912854559
@@ -34,11 +35,11 @@ collections:
     fields:
       - { name: name_de, label: "Name (Deutsch)",    widget: string }
       - { name: name_it, label: "Name (Italiano)",   widget: string }
-      - { name: name_en, label: "Name (English)",    widget: string }
+      - { name: name_en, label: "Name (Englisch)",    widget: string }
       - { name: slug,    label: "URL-Name",           widget: string, hint: "z.B. vasen, lampade — keine Leerzeichen" }
       - { name: beschreibung_de, label: "Beschreibung (Deutsch)",   widget: text, required: false, hint: "Optional — wird neben den Bildern angezeigt" }
-      - { name: beschreibung_it, label: "Descrizione (Italiano)",   widget: text, required: false }
-      - { name: beschreibung_en, label: "Description (English)",    widget: text, required: false }
+      - { name: beschreibung_it, label: "Beschreibung (Italiano)",   widget: text, required: false }
+      - { name: beschreibung_en, label: "Beschreibung (Englisch)",    widget: text, required: false }
       - name: bilder
         label: Bilder
         label_singular: Bild
@@ -63,8 +64,8 @@ collections:
             widget: list
             fields:
               - { name: titel_de, label: "Titel (Deutsch)",   widget: string }
-              - { name: titel_it, label: "Titolo (Italiano)",  widget: string }
-              - { name: titel_en, label: "Title (English)",    widget: string }
+              - { name: titel_it, label: "Titel (Italiano)",  widget: string }
+              - { name: titel_en, label: "Titel (Englisch)",    widget: string }
               - { name: url,      label: URL,                  widget: string }
 
   # ── Fixe Seiten ─────────────────────────────────────────
@@ -73,27 +74,27 @@ collections:
     files:
 
       - name: about
-        label: About me
+        label: Über mich
         file: _data/about.yaml
         fields:
           - { name: foto, label: "Profilfoto", widget: image }
           - { name: text_de, label: "Text (Deutsch)",   widget: list, label_singular: Absatz, field: { name: item, label: Absatz, widget: text } }
-          - { name: text_it, label: "Testo (Italiano)", widget: list, label_singular: Paragrafo, field: { name: item, label: Paragrafo, widget: text } }
-          - { name: text_en, label: "Text (English)",   widget: list, label_singular: Paragraph, field: { name: item, label: Paragraph, widget: text } }
+          - { name: text_it, label: "Text (Italiano)", widget: list, label_singular: Absatz, field: { name: item, label: Absatz, widget: text } }
+          - { name: text_en, label: "Text (Englisch)",   widget: list, label_singular: Absatz, field: { name: item, label: Absatz, widget: text } }
           - { name: email,     label: E-Mail,                      widget: string }
           - { name: telefon,   label: Telefon,                     widget: string }
           - { name: instagram, label: "Instagram Handle (ohne @)",  widget: string }
 
       - name: course
-        label: Kurse / Corsi / Courses
+        label: Kurse
         file: _data/course.yaml
         fields:
           - { name: titel_de, label: "Seitentitel (Deutsch)",  widget: string }
-          - { name: titel_it, label: "Titolo (Italiano)",       widget: string }
-          - { name: titel_en, label: "Page Title (English)",    widget: string }
+          - { name: titel_it, label: "Titel (Italiano)",       widget: string }
+          - { name: titel_en, label: "Seitentitel (Englisch)",    widget: string }
           - { name: text_de, label: "Text (Deutsch)",   widget: list, label_singular: Absatz, field: { name: item, label: Absatz, widget: text } }
-          - { name: text_it, label: "Testo (Italiano)", widget: list, label_singular: Paragrafo, field: { name: item, label: Paragrafo, widget: text } }
-          - { name: text_en, label: "Text (English)",   widget: list, label_singular: Paragraph, field: { name: item, label: Paragraph, widget: text } }
+          - { name: text_it, label: "Text (Italiano)", widget: list, label_singular: Absatz, field: { name: item, label: Absatz, widget: text } }
+          - { name: text_en, label: "Text (Englisch)",   widget: list, label_singular: Absatz, field: { name: item, label: Absatz, widget: text } }
 
       - name: news
         label: News-Popup
@@ -101,11 +102,11 @@ collections:
         fields:
           - { name: aktiv, label: "Popup anzeigen", widget: boolean, default: false, hint: "Popup auf der Website einblenden" }
           - { name: titel_de, label: "Titel (Deutsch)",   widget: string, required: false }
-          - { name: titel_it, label: "Titolo (Italiano)", widget: string, required: false }
-          - { name: titel_en, label: "Title (English)",   widget: string, required: false }
+          - { name: titel_it, label: "Titel (Italiano)", widget: string, required: false }
+          - { name: titel_en, label: "Titel (Englisch)",   widget: string, required: false }
           - { name: text_de,  label: "Text (Deutsch)",    widget: text,   required: false }
-          - { name: text_it,  label: "Testo (Italiano)",  widget: text,   required: false }
-          - { name: text_en,  label: "Text (English)",    widget: text,   required: false }
+          - { name: text_it,  label: "Text (Italiano)",  widget: text,   required: false }
+          - { name: text_en,  label: "Text (Englisch)",    widget: text,   required: false }
 
       - name: impressum
         label: Impressum
@@ -127,23 +128,23 @@ collections:
             label: Impressum (Italiano)
             widget: object
             fields:
-              - { name: titel, label: Titolo pagina, widget: string, default: Impressum }
+              - { name: titel, label: Seitentitel, widget: string, default: Impressum }
               - name: abschnitte
-                label: Sezioni
-                label_singular: Sezione
+                label: Abschnitte
+                label_singular: Abschnitt
                 widget: list
                 fields:
-                  - { name: titel,  label: Titolo,    widget: string, required: false }
-                  - { name: inhalt, label: Contenuto, widget: text }
+                  - { name: titel,  label: Überschrift,    widget: string, required: false }
+                  - { name: inhalt, label: Inhalt, widget: text }
           - name: en
-            label: Imprint (English)
+            label: Impressum (Englisch)
             widget: object
             fields:
-              - { name: titel, label: Page title, widget: string, default: Imprint }
+              - { name: titel, label: Seitentitel, widget: string, default: Imprint }
               - name: abschnitte
-                label: Sections
-                label_singular: Section
+                label: Abschnitte
+                label_singular: Abschnitt
                 widget: list
                 fields:
-                  - { name: titel,  label: Heading, widget: string, required: false }
-                  - { name: inhalt, label: Content, widget: text }
+                  - { name: titel,  label: Überschrift, widget: string, required: false }
+                  - { name: inhalt, label: Inhalt, widget: text }

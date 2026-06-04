@@ -595,7 +595,7 @@ main {
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .footer-left {
@@ -631,7 +631,7 @@ main {
 }
 
 .footer-imprint {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--dark);
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s;
@@ -783,28 +783,25 @@ main {
 ============================================= */
 
 @keyframes slideInFromRight {
-  from { transform: translateX(100%); }
-  to   { transform: translateX(0); }
+  from { transform: translateY(-50%) translateX(100%); }
+  to   { transform: translateY(-50%) translateX(0); }
 }
 
 @keyframes slideOutToRight {
-  from { transform: translateX(0); }
-  to   { transform: translateX(100%); }
+  from { transform: translateY(-50%) translateX(0); }
+  to   { transform: translateY(-50%) translateX(100%); }
 }
 
 .news-popup {
   position: fixed;
-  top: 0;
+  top: 50%;
   right: 0;
-  bottom: 0;
+  transform: translateY(-50%);
   width: clamp(220px, 25vw, 340px);
   background: var(--accent);
-  padding: 48px 28px 32px;
+  padding: 44px 28px 28px;
   z-index: 1000;
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   animation: slideInFromRight 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -814,8 +811,8 @@ main {
 
 .news-popup-close {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 12px;
+  right: 14px;
   background: none;
   border: none;
   color: #fff;
@@ -852,9 +849,17 @@ main {
     top: auto;
     bottom: 0;
     right: 0;
+    transform: none;
     width: 100%;
-    height: auto;
-    padding: 40px 20px 24px;
-    justify-content: flex-start;
+    padding: 36px 20px 20px;
+    animation-name: slideInFromRightMobile;
   }
+}
+
+@keyframes slideInFromRightMobile {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+.news-popup.is-closing {
+  animation: slideOutToRight 0.4s cubic-bezier(0.55, 0, 0.45, 1) both;
 }

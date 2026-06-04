@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% set current_url = 'index.html' %}
 {% set current_file = 'index.html' %}
-{% block title %}Portfolio — Naddi's{% endblock %}
+{% block title %}{% if lang == 'de' %}Naddis Keramik — Handgemachte Kunst und Keramik aus Südtirol{% elif lang == 'it' %}Naddis Keramik — Arte e Ceramica Artigianale dall'Alto Adige{% else %}Naddis Keramik — Handcrafted Art and Ceramics from South Tyrol{% endif %}{% endblock %}
 
 {% block content %}
 <div class="portfolio-container">
