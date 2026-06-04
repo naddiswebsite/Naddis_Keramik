@@ -70,8 +70,8 @@
 <footer class="site-footer">
   <div class="footer-left">
     {% if about is defined and about %}
-      {% if about.email %}<a href="mailto:{{ about.email }}" class="footer-contact-item">E-Mail</a>{% endif %}
-      {% if about.telefon %}<a href="tel:{{ about.telefon }}" class="footer-contact-item">Telefonnummer</a>{% endif %}
+      {% if about.email %}<a href="mailto:{{ about.email }}" class="footer-contact-item">{% if lang == "de" %}E-Mail{% elif lang == "it" %}E-Mail{% else %}Email{% endif %}</a>{% endif %}
+      {% if about.telefon %}<a href="tel:{{ about.telefon }}" class="footer-contact-item">{% if lang == "de" %}Telefon{% elif lang == "it" %}Telefono{% else %}Phone{% endif %}</a>{% endif %}
     {% endif %}
     <a class="footer-instagram" href="https://www.instagram.com/naddis_keramik/" target="_blank" rel="noopener" aria-label="Instagram">
       <svg viewBox="0 0 359.99999 359.9696" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
