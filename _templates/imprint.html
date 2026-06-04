@@ -4,24 +4,26 @@
 {% block title %}{{ imprint[lang].titel }} — Naddis Keramik{% endblock %}
 
 {% block content %}
-<div class="page-content">
+<div class="page-content page-content--left">
   <h1>{{ imprint[lang].titel }}</h1>
-  <div class="imprint-text">
-    {% for abschnitt in imprint[lang].abschnitte %}
-      {% if abschnitt.titel %}
-      <h2>{{ abschnitt.titel }}</h2>
-      {% endif %}
-      {% for zeile in abschnitt.inhalt.split('\n') %}
-        {% set url_start = zeile.find('(http') %}
-        {% if url_start > -1 %}
-          {% set label = zeile[:url_start].rstrip() %}
-          {% set url = zeile[url_start+1:-1] %}
-          <p>{{ label }} <a href="{{ url }}" target="_blank" rel="noopener">{{ url }}</a></p>
-        {% else %}
-          <p>{{ zeile }}</p>
+  <div class="subpage-wrapper">
+    <div class="subpage-content imprint-text">
+      {% for abschnitt in imprint[lang].abschnitte %}
+        {% if abschnitt.titel %}
+        <h2>{{ abschnitt.titel }}</h2>
         {% endif %}
+        {% for zeile in abschnitt.inhalt.split('\n') %}
+          {% set url_start = zeile.find('(http') %}
+          {% if url_start > -1 %}
+            {% set label = zeile[:url_start].rstrip() %}
+            {% set url = zeile[url_start+1:-1] %}
+            <p>{{ label }} <a href="{{ url }}" target="_blank" rel="noopener">{{ url }}</a></p>
+          {% else %}
+            <p>{{ zeile }}</p>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
-    {% endfor %}
+    </div>
   </div>
 </div>
 {% endblock %}
