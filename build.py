@@ -14,6 +14,11 @@ with open('_data/course.yaml', encoding='utf-8') as f:
 with open('_data/imprint.yaml', encoding='utf-8') as f:
     imprint = yaml.safe_load(f)
 
+news = {}
+if os.path.exists('_data/news.yaml'):
+    with open('_data/news.yaml', encoding='utf-8') as f:
+        news = yaml.safe_load(f) or {}
+
 import re
 
 def cloudinary_resize(url, width):
@@ -79,6 +84,7 @@ for lang in ['de', 'it', 'en']:
         about=about,
         kategorien=kategorien,
         alle_bilder=alle_bilder_shuffled,
+        news=news,
         lang=lang
     )
 

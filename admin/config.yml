@@ -95,8 +95,19 @@ collections:
           - { name: text_it, label: "Testo (Italiano)", widget: list, label_singular: Paragrafo, field: { name: item, label: Paragrafo, widget: text } }
           - { name: text_en, label: "Text (English)",   widget: list, label_singular: Paragraph, field: { name: item, label: Paragraph, widget: text } }
 
-      - name: impressum
-        label: Impressum
+      - name: news
+        label: News-Popup
+        file: _data/news.yaml
+        fields:
+          - { name: aktiv, label: "Popup anzeigen", widget: boolean, default: false, hint: "Popup auf der Website einblenden" }
+          - { name: titel_de, label: "Titel (Deutsch)",   widget: string, required: false }
+          - { name: titel_it, label: "Titolo (Italiano)", widget: string, required: false }
+          - { name: titel_en, label: "Title (English)",   widget: string, required: false }
+          - { name: text_de,  label: "Text (Deutsch)",    widget: text,   required: false }
+          - { name: text_it,  label: "Testo (Italiano)",  widget: text,   required: false }
+          - { name: text_en,  label: "Text (English)",    widget: text,   required: false }
+
+      - name: impressum        label: Impressum
         file: _data/imprint.yaml
         fields:
           - name: de
