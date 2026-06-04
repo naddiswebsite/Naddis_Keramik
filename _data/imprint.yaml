@@ -15,8 +15,8 @@ de:
       inhalt: 'Partita IVA: 03307290217'
     - titel: Hosting und Webseitenverwaltung
       inhalt: |-
-        Hosting Provider: [PLACEHOLDER: Provider eintragen]
-        Web Design: [PLACEHOLDER: Designer eintragen]
+        Hosting Provider: Cloudflare
+        Web Design: Hannes Oberparleiter
     - titel: Urheberrecht
       inhalt: Alle Inhalte dieser Website, einschließlich Bilder, Texte und Designs, sind urheberrechtlich geschützt. Die unbefugte Vervielfältigung, Verbreitung oder Nutzung ist untersagt.
 it:
@@ -36,8 +36,8 @@ it:
       inhalt: 'Partita IVA: 03307290217'
     - titel: Hosting e gestione del sito
       inhalt: |-
-        Hosting provider: [PLACEHOLDER: aggiungere provider]
-        Web design: [PLACEHOLDER: aggiungere designer]
+        Hosting provider: Cloudflare
+        Web design: Hannes Oberparleiter
     - titel: Diritti d'autore
       inhalt: Tutti i contenuti del sito, incluse le immagini, i testi e i design, sono protetti da copyright. La riproduzione, la distribuzione o l'uso non autorizzato è vietato.
 en:
@@ -57,7 +57,7 @@ en:
       inhalt: 'VAT ID: 03307290217'
     - titel: Hosting and Website Management
       inhalt: |-
-        Hosting Provider: [PLACEHOLDER: add provider]
-        Web Design: [PLACEHOLDER: add designer]
+        Hosting Provider: Cloudflare
+        Web Design: Hannes Oberparleiter
     - titel: Copyright
       inhalt: All contents of the website, including images, texts and designs, are protected by copyright. Unauthorized reproduction, distribution or use is prohibited.
