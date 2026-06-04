@@ -5,10 +5,12 @@
 
 {% block content %}
 <div class="page-content page-content--left">
-  <h1>{% if lang == 'de' %}Workshops{% elif lang == 'it' %}Corsi{% else %}Workshops{% endif %}</h1>
   {% if course %}
     {% if course['text_' + lang] %}
     <div class="subpage-wrapper">
+      <div class="subpage-col-left">
+        <h1>{% if lang == 'de' %}Workshops{% elif lang == 'it' %}Corsi{% else %}Workshops{% endif %}</h1>
+      </div>
       <div class="subpage-content course-text">
         {% for absatz in course['text_' + lang] %}
         <p>{{ absatz }}</p>
