@@ -782,21 +782,40 @@ main {
    NEWS POPUP
 ============================================= */
 
+@keyframes slideInFromRight {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+
+@keyframes slideOutToRight {
+  from { transform: translateX(0); }
+  to   { transform: translateX(100%); }
+}
+
 .news-popup {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  top: 0;
+  right: 0;
+  bottom: 0;
   width: clamp(220px, 25vw, 340px);
   background: var(--accent);
-  padding: 28px 28px 24px;
+  padding: 48px 28px 32px;
   z-index: 1000;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: slideInFromRight 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.news-popup.is-closing {
+  animation: slideOutToRight 0.4s cubic-bezier(0.55, 0, 0.45, 1) both;
 }
 
 .news-popup-close {
   position: absolute;
-  top: 12px;
-  right: 14px;
+  top: 16px;
+  right: 16px;
   background: none;
   border: none;
   color: #fff;
@@ -830,9 +849,12 @@ main {
 
 @media (max-width: 480px) {
   .news-popup {
+    top: auto;
     bottom: 0;
     right: 0;
     width: 100%;
-    padding: 20px 20px 18px;
+    height: auto;
+    padding: 40px 20px 24px;
+    justify-content: flex-start;
   }
 }

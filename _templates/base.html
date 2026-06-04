@@ -101,7 +101,7 @@
 
 {% if news and news.aktiv and news['titel_' + lang] %}
 <div class="news-popup" id="news-popup">
-  <button class="news-popup-close" onclick="document.getElementById('news-popup').style.display='none'" aria-label="Schließen">&times;</button>
+  <button class="news-popup-close" onclick="(function(){var p=document.getElementById('news-popup');p.classList.add('is-closing');p.addEventListener('animationend',function(){p.style.display='none'},{once:true})})()" aria-label="Schließen">&times;</button>
   <h2 class="news-popup-titel">{{ news['titel_' + lang] }}</h2>
   {% if news['text_' + lang] %}
   <p class="news-popup-text">{{ news['text_' + lang] }}</p>
