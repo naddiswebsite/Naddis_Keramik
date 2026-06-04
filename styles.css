@@ -56,11 +56,12 @@ img { display: block; max-width: 100%; height: auto; }
 .header-logo {
   flex-shrink: 0;
   order: 1;
-  margin-left: calc(-1 * var(--gap));
+  margin-left: calc(-1 * var(--gap) - 8px);
+  margin-top: -10px;
 }
 
 .logo-svg {
-  height: 110px;
+  height: 130px;
   width: auto;
   fill: var(--dark);
   display: block;
