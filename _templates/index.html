@@ -17,10 +17,16 @@
     {% endfor %}
   </div>
 
+  <!-- Kategorienbeschreibung (nur wenn vorhanden) -->
+  <div class="kat-beschreibung-wrapper" id="kat-beschreibung" style="display:none;">
+    <div class="kat-beschreibung-spacer"></div>
+    <div class="kat-beschreibung-text subpage-content"></div>
+  </div>
+
   <!-- Bilder Grid (Masonry/CSS Columns) -->
   <div class="gallery-grid">
     {% for bild in alle_bilder %}
-    <div class="gallery-item" data-category="{{ bild.kategorie_slug }}" data-src="{{ bild.bild }}">
+    <div class="gallery-item" data-category="{{ bild.kategorie_slug }}" data-src="{{ bild.bild }}" data-beschreibung="{{ bild['beschreibung_' + lang] or '' }}">
       <div class="gallery-item-image">
         <img src="{{ bild.bild }}"
              alt="{{ bild['beschreibung_' + lang] or bild.kategorie_name_de }}"
@@ -38,9 +44,18 @@
 let currentImageIndex = 0;
 let visibleImages = [];
 
+// Kategorienbeschreibungen aus Template
+const katBeschreibungen = {
+  {% for kat in kategorien %}
+  "{{ kat.slug }}": {{ (kat['beschreibung_' + lang] or '') | tojson }},
+  {% endfor %}
+};
+
 document.addEventListener('DOMContentLoaded', function() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const galleryItems = document.querySelectorAll('.gallery-item');
+  const beschreibungWrapper = document.getElementById('kat-beschreibung');
+  const beschreibungText = document.querySelector('.kat-beschreibung-text');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', function() {
@@ -48,6 +63,14 @@ document.addEventListener('DOMContentLoaded', function() {
       
       filterBtns.forEach(b => b.classList.remove('active'));
       this.classList.add('active');
+
+      // Beschreibung
+      if (filterValue !== '*' && katBeschreibungen[filterValue]) {
+        beschreibungText.textContent = katBeschreibungen[filterValue];
+        beschreibungWrapper.style.display = '';
+      } else {
+        beschreibungWrapper.style.display = 'none';
+      }
 
       visibleImages = [];
       galleryItems.forEach((item, index) => {
@@ -73,9 +96,13 @@ document.addEventListener('DOMContentLoaded', function() {
 function openModal(itemElement) {
   const modal = document.getElementById('image-modal');
   const modalImg = document.querySelector('.modal-image');
+  const modalCaption = document.querySelector('.modal-caption');
   const src = itemElement.getAttribute('data-src');
+  const beschreibung = itemElement.getAttribute('data-beschreibung') || '';
   
   modalImg.src = src;
+  modalCaption.textContent = beschreibung;
+  modalCaption.style.display = beschreibung ? '' : 'none';
   modal.classList.add('active');
   
   currentImageIndex = visibleImages.indexOf(itemElement);
@@ -86,7 +113,11 @@ function showPrevImage() {
   currentImageIndex = (currentImageIndex - 1 + visibleImages.length) % visibleImages.length;
   const item = visibleImages[currentImageIndex];
   const modalImg = document.querySelector('.modal-image');
+  const modalCaption = document.querySelector('.modal-caption');
+  const beschreibung = item.getAttribute('data-beschreibung') || '';
   modalImg.src = item.getAttribute('data-src');
+  modalCaption.textContent = beschreibung;
+  modalCaption.style.display = beschreibung ? '' : 'none';
 }
 
 function showNextImage() {
@@ -94,7 +125,11 @@ function showNextImage() {
   currentImageIndex = (currentImageIndex + 1) % visibleImages.length;
   const item = visibleImages[currentImageIndex];
   const modalImg = document.querySelector('.modal-image');
+  const modalCaption = document.querySelector('.modal-caption');
+  const beschreibung = item.getAttribute('data-beschreibung') || '';
   modalImg.src = item.getAttribute('data-src');
+  modalCaption.textContent = beschreibung;
+  modalCaption.style.display = beschreibung ? '' : 'none';
 }
 </script>
 {% endblock %}

@@ -51,9 +51,10 @@ os.makedirs('dist/de', exist_ok=True)
 os.makedirs('dist/it', exist_ok=True)
 os.makedirs('dist/en', exist_ok=True)
 
-for fname in ['styles.css', 'scripts.js']:
-    shutil.copy(fname, f'dist/{fname}')
-    print(f'✓ dist/{fname}')
+for fname in ['styles.css', 'scripts.js', '_headers']:
+    if os.path.exists(fname):
+        shutil.copy(fname, f'dist/{fname}')
+        print(f'✓ dist/{fname}')
 
 if os.path.exists('dist/admin'):
     shutil.rmtree('dist/admin')
