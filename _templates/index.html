@@ -73,7 +73,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if (kat.titel) html += '<h2 class="kat-beschreibung-titel">' + kat.titel.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</h2>';
         if (kat.text) {
           kat.text.split('\n').forEach(function(line) {
-            if (line.trim()) html += '<p>' + line.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</p>';
+            if (line.trim()) {
+              const escaped = line.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+              if (/^[₀₁₂₃₄₅₆₇₈₉]/.test(line.trim())) {
+                html += '<p><small>' + escaped + '</small></p>';
+              } else {
+                html += '<p>' + escaped + '</p>';
+              }
+            }
           });
         }
         beschreibungEl.innerHTML = html;
