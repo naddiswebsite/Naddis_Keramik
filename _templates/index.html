@@ -45,7 +45,7 @@ let visibleImages = [];
 
 // Kategorienbeschreibungen aus Template
 const katBeschreibungen = {
-  {% for kat in kategorien %}\
+  {% for kat in kategorien %}
   "{{ kat.slug }}": {
     titel: {{ (kat['titel_' + lang] or '') | tojson }},
     text: {{ (kat['beschreibung_' + lang] or '') | tojson }}
