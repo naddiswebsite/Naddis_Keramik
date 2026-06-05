@@ -45,8 +45,11 @@ let visibleImages = [];
 
 // Kategorienbeschreibungen aus Template
 const katBeschreibungen = {
-  {% for kat in kategorien %}
-  "{{ kat.slug }}": {{ (kat['beschreibung_' + lang] or '') | tojson }},
+  {% for kat in kategorien %}\
+  "{{ kat.slug }}": {
+    titel: {{ (kat['titel_' + lang] or '') | tojson }},
+    text: {{ (kat['beschreibung_' + lang] or '') | tojson }}
+  },
   {% endfor %}
 };
 
@@ -64,11 +67,20 @@ document.addEventListener('DOMContentLoaded', function() {
       this.classList.add('active');
 
       // Beschreibung
-      if (filterValue !== '*' && katBeschreibungen[filterValue]) {
-        beschreibungEl.textContent = katBeschreibungen[filterValue];
+      if (filterValue !== '*' && katBeschreibungen[filterValue] && (katBeschreibungen[filterValue].titel || katBeschreibungen[filterValue].text)) {
+        const kat = katBeschreibungen[filterValue];
+        let html = '';
+        if (kat.titel) html += '<h2 class="kat-beschreibung-titel">' + kat.titel.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</h2>';
+        if (kat.text) {
+          kat.text.split('\n').forEach(function(line) {
+            if (line.trim()) html += '<p>' + line.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</p>';
+          });
+        }
+        beschreibungEl.innerHTML = html;
         beschreibungEl.style.display = '';
         galleryWithDesc.classList.add('has-description');
       } else {
+        beschreibungEl.innerHTML = '';
         beschreibungEl.style.display = 'none';
         galleryWithDesc.classList.remove('has-description');
       }

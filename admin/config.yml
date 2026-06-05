@@ -35,6 +35,9 @@ collections:
       - { name: name_it, label: "Name (Italiano)",   widget: string }
       - { name: name_en, label: "Name (Englisch)",    widget: string }
       - { name: slug,    label: "URL-Name",           widget: string, hint: "z.B. vasen, lampade — keine Leerzeichen" }
+      - { name: titel_de, label: "Titel (Deutsch)",    widget: string, required: false, hint: "Optional — Überschrift über der Beschreibung" }
+      - { name: titel_it, label: "Titolo (Italiano)",  widget: string, required: false }
+      - { name: titel_en, label: "Title (English)",    widget: string, required: false }
       - { name: beschreibung_de, label: "Beschreibung (Deutsch)",   widget: text, required: false, hint: "Optional — wird neben den Bildern angezeigt" }
       - { name: beschreibung_it, label: "Beschreibung (Italiano)",   widget: text, required: false }
       - { name: beschreibung_en, label: "Beschreibung (Englisch)",    widget: text, required: false }
