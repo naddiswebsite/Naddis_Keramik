@@ -1,26 +1,29 @@
 name_de: Lampen
-name_it: Lampade
+name_it: illuminazione
 name_en: Lamps
 slug: lampen
+beschreibung_de: ''
+beschreibung_it: ''
+beschreibung_en: ''
+bilder:
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF0533_abiq1y
+    beschreibung_de: Lampen
+    beschreibung_it: Lampen
+    beschreibung_en: Lamps
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/lampeblume-ausschnitt_tq9suj
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSC01846_zyex7k
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/hängelampe.det._jg98kc
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
 titelbild:
   bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF0533_abiq1y
   alt_de: Lampen
   alt_it: Lampade
   alt_en: Lamps
-bilder:
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF0533_abiq1y
-  beschreibung_de: Lampen
-  beschreibung_it: Lampen
-  beschreibung_en: Lamps
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/lampeblume-ausschnitt_tq9suj
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSC01846_zyex7k
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/hängelampe.det._jg98kc
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
