@@ -110,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
       popup.classList.add('is-closing');
       popup.addEventListener('animationend', function() {
         popup.style.display = 'none';
-        sessionStorage.setItem('news-popup-seen', '1');
       }, { once: true });
     });
   }

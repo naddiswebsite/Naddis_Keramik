@@ -172,11 +172,6 @@ function showNextImage() {
   <p class="news-popup-text">{{ news['text_' + lang] }}</p>
   {% endif %}
 </div>
-<script>
-  if (sessionStorage.getItem('news-popup-seen')) {
-    document.getElementById('news-popup').style.display = 'none';
-  }
-</script>
 {% endif %}
 
 {% endblock %}
