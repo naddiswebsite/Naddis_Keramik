@@ -104,7 +104,7 @@ for lang in ['de', 'it', 'en']:
 
     # imprint.html
     with open(f'dist/{lang}/imprint.html', 'w', encoding='utf-8') as f:
-        f.write(env.get_template('imprint.html').render(imprint=imprint, **ctx))
+        f.write(env.get_template('imprint.html').render(**ctx))
     print(f'✓ dist/{lang}/imprint.html')
 
 # Root index.html: leitet zur Browsersprache weiter (DE als Standard)
