@@ -30,6 +30,10 @@ bilder:
     beschreibung_de: ''
     beschreibung_it: ''
     beschreibung_en: ''
+  - bild: /images/portfolio/nachkastelblume.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
 titelbild:
   bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/maske_vy5uzn
   alt_de: Figuren & Formen
