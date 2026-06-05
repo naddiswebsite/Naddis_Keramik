@@ -1,7 +1,10 @@
 aktiv: true
-titel_de: ''
+titel_de: Test
 titel_it: ''
 titel_en: ''
-text_de: ''
+text_de: |-
+  Test Test Test Test
+  Test
+  Test
 text_it: ''
 text_en: ''
