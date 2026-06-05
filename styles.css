@@ -525,11 +525,11 @@ main {
 
 .about-contact a {
   color: var(--dark);
-  transition: opacity 0.3s;
+  transition: color 0.25s;
 }
 
 .about-contact a:hover {
-  opacity: 0.6;
+  color: var(--accent);
 }
 
 .about-text h1 {
@@ -633,22 +633,22 @@ main {
 
 .footer-contact-item {
   color: var(--dark);
-  transition: opacity 0.3s;
+  transition: color 0.25s;
 }
 
 .footer-contact-item:hover {
-  opacity: 0.6;
+  color: var(--accent);
 }
 
 .footer-instagram {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  transition: opacity 0.3s;
+  transition: color 0.25s;
 }
 
 .footer-instagram:hover {
-  opacity: 0.7;
+  color: var(--accent);
 }
 
 .footer-instagram svg {
@@ -659,12 +659,11 @@ main {
 .footer-imprint {
   font-size: 0.95rem;
   color: var(--dark);
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.3s;
+  transition: color 0.25s;
 }
 
 .footer-imprint:hover {
-  border-bottom-color: var(--accent);
+  color: var(--accent);
 }
 
 /* =============================================
@@ -814,14 +813,14 @@ main {
    NEWS POPUP
 ============================================= */
 
-@keyframes slideInFromBottom {
-  from { transform: translateY(100%); }
-  to   { transform: translateY(0); }
+@keyframes slideInFromRight {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
 }
 
-@keyframes slideOutToBottom {
-  from { transform: translateY(0); }
-  to   { transform: translateY(100%); }
+@keyframes slideOutToRight {
+  from { transform: translateX(0); }
+  to   { transform: translateX(100%); }
 }
 
 .news-popup {
@@ -834,11 +833,11 @@ main {
   padding: 44px 28px 28px;
   z-index: 1000;
   text-align: left;
-  animation: slideInFromBottom 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: slideInFromRight 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .news-popup.is-closing {
-  animation: slideOutToBottom 0.4s cubic-bezier(0.55, 0, 0.45, 1) both;
+  animation: slideOutToRight 0.4s cubic-bezier(0.55, 0, 0.45, 1) both;
 }
 
 .news-popup-close {
@@ -847,18 +846,34 @@ main {
   right: 14px;
   background: none;
   border: none;
-  color: #fff;
-  font-size: 1.4rem;
-  line-height: 1;
   cursor: pointer;
   padding: 0;
-  font-family: 'Miranda', sans-serif;
+  width: 24px;
+  height: 24px;
   opacity: 0.8;
   transition: opacity 0.2s;
 }
 
 .news-popup-close:hover {
   opacity: 1;
+}
+
+.news-popup-close span {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 1.5px;
+  background: #fff;
+  top: 50%;
+  left: 2px;
+}
+
+.news-popup-close span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.news-popup-close span:nth-child(2) {
+  transform: rotate(-45deg);
 }
 
 .news-popup-titel {

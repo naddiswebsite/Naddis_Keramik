@@ -113,7 +113,7 @@
 
 {% if news and news.aktiv and news['titel_' + lang] %}
 <div class="news-popup" id="news-popup">
-  <button class="news-popup-close" aria-label="Schließen">&times;</button>
+  <button class="news-popup-close" aria-label="Schließen"><span></span><span></span></button>
   <h2 class="news-popup-titel">{{ news['titel_' + lang] }}</h2>
   {% if news['text_' + lang] %}
   <p class="news-popup-text">{{ news['text_' + lang] }}</p>
