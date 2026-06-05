@@ -2,37 +2,40 @@ name_de: Teller
 name_it: Piatti
 name_en: Plates
 slug: teller
+beschreibung_de: ''
+beschreibung_it: ''
+beschreibung_en: ''
+bilder:
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/tELLER_GIACOMETTI_gx1mvb
+    beschreibung_de: Piatti - Teller
+    beschreibung_it: Piatti - Teller
+    beschreibung_en: Piatti - Plates
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF7953_yxyueh
+    beschreibung_de: Zusammenarbeit mit dem Restaurant ''Da Zenz" in Wolkenstein
+    beschreibung_it: collaborazione con il ristorante "Da Zenz" in Selva di Val Gardena
+    beschreibung_en: collaboration with the restaurant "Da Zenz" in Selva di Val Gardena
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF7863_bokusz
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF7917_rgmucw
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF8400_m5xpm4
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF9052_kxg36h
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF9061_cebond
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
 titelbild:
   bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/tELLER_GIACOMETTI_gx1mvb
   alt_de: Teller
   alt_it: Piatti
   alt_en: Plates
-bilder:
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/tELLER_GIACOMETTI_gx1mvb
-  beschreibung_de: Piatti - Teller
-  beschreibung_it: Piatti - Teller
-  beschreibung_en: Piatti - Plates
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF7953_yxyueh
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF7863_bokusz
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF7917_rgmucw
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF8400_m5xpm4
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF9052_kxg36h
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF9061_cebond
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
