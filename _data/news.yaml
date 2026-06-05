@@ -1,7 +1,13 @@
-aktiv: false
-titel_de: ''
-titel_it: ''
-titel_en: ''
-text_de: ''
-text_it: ''
-text_en: ''
+aktiv: true
+titel_de: Traditioneller Handwerker- und Bauernmarkt in Gröden
+titel_it: Mercatino Tradizionale dei Contadini e Artigiani
+titel_en: Traditional Farmers and Artisans Market
+text_de: |-
+  am 23.06.2026, 30.06.2026, 07.07.2026, 14.07.2026, 21.07.2026, 28.07.2026, 04.08.2026, 11.08.2026, 18.08.2026, 25.08.2026, 01.09.2026 und 08.09.2026 ab 19:00 Uhr bis 22:00 Uhr
+  Fußgängerzone - St. Christina - Südtirol
+text_it: |-
+  il 23.06.2026, 30.06.2026, 07.07.2026, 14.07.2026, 21.07.2026, 28.07.2026, 04.08.2026, 11.08.2026, 18.08.2026, 25.08.2026, 01.09.2026 e 08.09.2026 dalle ore 19:00 alle ore 22:00
+  zona pedonale - St. Cristina - Val Gardena
+text_en: |-
+  On 23 June 2026, 30 June 2026, 7 July 2026, 14 July 2026, 21 July 2026, 28 July 2026, 4 August 2026, 11 August 2026, 18 August 2026, 25 August 2026, 1 September 2026 and 8 September 2026, from 7:00 PM to 10:00 PM
+  Pedestrian Zone – St. Christina – South Tyrol
