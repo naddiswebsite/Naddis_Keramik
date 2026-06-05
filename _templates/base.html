@@ -4,9 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}Naddis Keramik — Handgemachte Kunst und Keramik aus Südtirol{% endblock %}</title>
-  <link rel="alternate" hreflang="de" href="/de/{{ current_file }}">
-  <link rel="alternate" hreflang="it" href="/it/{{ current_file }}">
-  <link rel="alternate" hreflang="en" href="/en/{{ current_file }}">
+  <meta name="description" content="{% block description %}{% if lang == 'de' %}Naddis Keramik — Handgemachte Keramik und Kunst aus Südtirol von Nadia Mussner. Vasen, Tassen, Schmuck und mehr.{% elif lang == 'it' %}Naddis Keramik — Ceramica e arte artigianale dall'Alto Adige di Nadia Mussner. Vasi, tazze, gioielli e altro.{% else %}Naddis Keramik — Handcrafted ceramics and art from South Tyrol by Nadia Mussner. Vases, cups, jewellery and more.{% endif %}{% endblock %}">
+  <link rel="canonical" href="https://naddisceramics.com/{{ lang }}/{{ current_file }}">
+  <link rel="alternate" hreflang="de" href="https://naddisceramics.com/de/{{ current_file }}">
+  <link rel="alternate" hreflang="it" href="https://naddisceramics.com/it/{{ current_file }}">
+  <link rel="alternate" hreflang="en" href="https://naddisceramics.com/en/{{ current_file }}">
+  <link rel="alternate" hreflang="x-default" href="https://naddisceramics.com/de/{{ current_file }}">
+  <!-- Open Graph -->
+  <meta property="og:title" content="{% block og_title %}{% block og_title_inner %}Naddis Keramik{% endblock %}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{% if lang == 'de' %}Handgemachte Keramik und Kunst aus Südtirol von Nadia Mussner.{% elif lang == 'it' %}Ceramica e arte artigianale dall'Alto Adige di Nadia Mussner.{% else %}Handcrafted ceramics and art from South Tyrol by Nadia Mussner.{% endif %}{% endblock %}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://naddisceramics.com/{{ lang }}/{{ current_file }}">
+  <meta property="og:locale" content="{% if lang == 'de' %}de_DE{% elif lang == 'it' %}it_IT{% else %}en_US{% endif %}">
+  <meta property="og:site_name" content="Naddis Keramik">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/styles.css">
   <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
   <link rel="dns-prefetch" href="https://res.cloudinary.com">
@@ -80,7 +92,7 @@
       naddis_keramik
     </a>
   </div>
-  <a href="/{{ lang }}/imprint.html" class="footer-imprint">{% if lang == 'de' %}Impressum{% elif lang == 'it' %}Impressum{% else %}Imprint{% endif %}</a>
+  <a href="/{{ lang }}/imprint.html" class="footer-imprint">{{ imprint[lang].titel }}</a>
 </footer>
 
 <div id="image-modal" class="modal">
@@ -98,21 +110,6 @@
 </div>
 
 <script src="/scripts.js"></script>
-
-{% if news and news.aktiv and news['titel_' + lang] %}
-<div class="news-popup" id="news-popup">
-  <button class="news-popup-close" aria-label="Schließen">&times;</button>
-  <h2 class="news-popup-titel">{{ news['titel_' + lang] }}</h2>
-  {% if news['text_' + lang] %}
-  <p class="news-popup-text">{{ news['text_' + lang] }}</p>
-  {% endif %}
-</div>
-<script>
-  if (sessionStorage.getItem('news-popup-seen')) {
-    document.getElementById('news-popup').style.display = 'none';
-  }
-</script>
-{% endif %}
 
 </body>
 </html>

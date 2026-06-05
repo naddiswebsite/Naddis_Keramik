@@ -54,7 +54,7 @@ os.makedirs('dist/de', exist_ok=True)
 os.makedirs('dist/it', exist_ok=True)
 os.makedirs('dist/en', exist_ok=True)
 
-for fname in ['styles.css', 'scripts.js', '_headers']:
+for fname in ['styles.css', 'scripts.js', '_headers', 'favicon.svg']:
     if os.path.exists(fname):
         shutil.copy(fname, f'dist/{fname}')
         print(f'✓ dist/{fname}')
@@ -83,6 +83,7 @@ for lang in ['de', 'it', 'en']:
         kategorien=kategorien,
         alle_bilder=alle_bilder_shuffled,
         news=news,
+        imprint=imprint,
         lang=lang
     )
 
@@ -103,7 +104,7 @@ for lang in ['de', 'it', 'en']:
 
     # imprint.html
     with open(f'dist/{lang}/imprint.html', 'w', encoding='utf-8') as f:
-        f.write(env.get_template('imprint.html').render(imprint=imprint, **ctx))
+        f.write(env.get_template('imprint.html').render(**ctx))
     print(f'✓ dist/{lang}/imprint.html')
 
 # Root index.html: leitet zur Browsersprache weiter (DE als Standard)
@@ -131,3 +132,20 @@ with open('dist/index.html', 'w', encoding='utf-8') as f:
 print('✓ dist/index.html (Sprachweiche)')
 
 print(f'\nBuild fertig → dist/ (DE + IT + EN, {len(alle_bilder)} Bilder, {len(kategorien)} Kategorien)')
+
+# Sitemap generieren
+pages = ['index.html', 'about.html', 'course.html', 'imprint.html']
+sitemap_urls = []
+for lang in ['de', 'it', 'en']:
+    for page in pages:
+        sitemap_urls.append(f'https://naddisceramics.com/{lang}/{page}')
+
+sitemap_xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
+sitemap_xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+for url in sitemap_urls:
+    sitemap_xml += f'  <url><loc>{url}</loc></url>\n'
+sitemap_xml += '</urlset>\n'
+
+with open('dist/sitemap.xml', 'w', encoding='utf-8') as f:
+    f.write(sitemap_xml)
+print('✓ dist/sitemap.xml')

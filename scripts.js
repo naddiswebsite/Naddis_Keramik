@@ -46,11 +46,47 @@ document.addEventListener('DOMContentLoaded', function() {
       if (e.key === 'Escape') {
         modal.classList.remove('active');
       } else if (e.key === 'ArrowLeft') {
-        showPrevImage();
+        if (typeof showPrevImage === 'function') showPrevImage();
       } else if (e.key === 'ArrowRight') {
-        showNextImage();
+        if (typeof showNextImage === 'function') showNextImage();
       }
     });
+
+    // Touch-Swipe für Mobile
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchEndX = 0;
+    let touchEndY = 0;
+
+    modal.addEventListener('touchstart', function(e) {
+      touchStartX = e.changedTouches[0].screenX;
+      touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    modal.addEventListener('touchend', function(e) {
+      touchEndX = e.changedTouches[0].screenX;
+      touchEndY = e.changedTouches[0].screenY;
+
+      const dx = touchEndX - touchStartX;
+      const dy = touchEndY - touchStartY;
+      const absDx = Math.abs(dx);
+      const absDy = Math.abs(dy);
+
+      // Swipe nach oben → Modal schließen
+      if (absDy > absDx && dy < -60) {
+        modal.classList.remove('active');
+        return;
+      }
+
+      // Horizontaler Swipe → Bild wechseln
+      if (absDx > absDy && absDx > 50) {
+        if (dx < 0) {
+          if (typeof showNextImage === 'function') showNextImage();
+        } else {
+          if (typeof showPrevImage === 'function') showPrevImage();
+        }
+      }
+    }, { passive: true });
   }
 
   // Modal-Navigation Buttons (nur auf Seiten mit Gallery vorhanden)
