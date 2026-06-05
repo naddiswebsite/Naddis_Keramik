@@ -83,6 +83,7 @@ for lang in ['de', 'it', 'en']:
         kategorien=kategorien,
         alle_bilder=alle_bilder_shuffled,
         news=news,
+        imprint=imprint,
         lang=lang
     )
 

@@ -92,7 +92,7 @@
       naddis_keramik
     </a>
   </div>
-  <a href="/{{ lang }}/imprint.html" class="footer-imprint">{% if lang == 'de' %}Impressum{% elif lang == 'it' %}Impressum{% else %}Imprint{% endif %}</a>
+  <a href="/{{ lang }}/imprint.html" class="footer-imprint">{{ imprint[lang].titel }}</a>
 </footer>
 
 <div id="image-modal" class="modal">
@@ -110,21 +110,6 @@
 </div>
 
 <script src="/scripts.js"></script>
-
-{% if news and news.aktiv and news['titel_' + lang] %}
-<div class="news-popup" id="news-popup">
-  <button class="news-popup-close" aria-label="Schließen"><span></span><span></span></button>
-  <h2 class="news-popup-titel">{{ news['titel_' + lang] }}</h2>
-  {% if news['text_' + lang] %}
-  <p class="news-popup-text">{{ news['text_' + lang] }}</p>
-  {% endif %}
-</div>
-<script>
-  if (sessionStorage.getItem('news-popup-seen')) {
-    document.getElementById('news-popup').style.display = 'none';
-  }
-</script>
-{% endif %}
 
 </body>
 </html>
