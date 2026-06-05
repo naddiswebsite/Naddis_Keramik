@@ -309,6 +309,21 @@ main {
   display: block;
   margin-bottom: 24px;
   break-inside: avoid;
+  animation: fadeInUp 0.35s ease both;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.gallery-item.is-hiding {
+  animation: fadeOut 0.2s ease both;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
 }
 
 .gallery-item-image {
@@ -799,31 +814,31 @@ main {
    NEWS POPUP
 ============================================= */
 
-@keyframes slideInFromRight {
-  from { transform: translateY(-50%) translateX(100%); }
-  to   { transform: translateY(-50%) translateX(0); }
+@keyframes slideInFromBottom {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
 }
 
-@keyframes slideOutToRight {
-  from { transform: translateY(-50%) translateX(0); }
-  to   { transform: translateY(-50%) translateX(100%); }
+@keyframes slideOutToBottom {
+  from { transform: translateY(0); }
+  to   { transform: translateY(100%); }
 }
 
 .news-popup {
   position: fixed;
-  top: 50%;
+  bottom: 0;
   right: 0;
-  transform: translateY(-50%);
+  transform: none;
   width: clamp(220px, 25vw, 340px);
   background: var(--accent);
   padding: 44px 28px 28px;
   z-index: 1000;
   text-align: left;
-  animation: slideInFromRight 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: slideInFromBottom 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .news-popup.is-closing {
-  animation: slideOutToRight 0.4s cubic-bezier(0.55, 0, 0.45, 1) both;
+  animation: slideOutToBottom 0.4s cubic-bezier(0.55, 0, 0.45, 1) both;
 }
 
 .news-popup-close {
@@ -863,20 +878,7 @@ main {
 
 @media (max-width: 480px) {
   .news-popup {
-    top: auto;
-    bottom: 0;
-    right: 0;
-    transform: none;
     width: 100%;
     padding: 36px 20px 20px;
-    animation-name: slideInFromRightMobile;
   }
-}
-
-@keyframes slideInFromRightMobile {
-  from { transform: translateX(100%); }
-  to   { transform: translateX(0); }
-}
-.news-popup.is-closing {
-  animation: slideOutToRight 0.4s cubic-bezier(0.55, 0, 0.45, 1) both;
 }

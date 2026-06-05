@@ -86,15 +86,30 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       visibleImages = [];
-      galleryItems.forEach((item, index) => {
+      let delay = 0;
+      galleryItems.forEach((item) => {
         if (filterValue === '*') {
           item.style.display = 'block';
+          item.style.animationDelay = delay + 'ms';
+          item.classList.remove('is-hiding');
+          void item.offsetWidth; // reflow
+          item.style.animation = 'none';
+          item.offsetHeight;
+          item.style.animation = '';
           visibleImages.push(item);
+          delay += 20;
         } else {
           const itemCategory = item.getAttribute('data-category');
           if (itemCategory === filterValue) {
             item.style.display = 'block';
+            item.style.animationDelay = delay + 'ms';
+            item.classList.remove('is-hiding');
+            void item.offsetWidth;
+            item.style.animation = 'none';
+            item.offsetHeight;
+            item.style.animation = '';
             visibleImages.push(item);
+            delay += 20;
           } else {
             item.style.display = 'none';
           }
@@ -104,6 +119,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   visibleImages = Array.from(galleryItems);
+  visibleImages.forEach((item, i) => {
+    item.style.animationDelay = (i * 20) + 'ms';
+  });
 });
 
 function openModal(itemElement) {
