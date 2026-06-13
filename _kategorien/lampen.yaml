@@ -2,6 +2,9 @@ name_de: Lampen
 name_it: illuminazione
 name_en: Lamps
 slug: lampen
+titel_de: ''
+titel_it: ''
+titel_en: ''
 beschreibung_de: ''
 beschreibung_it: ''
 beschreibung_en: ''
@@ -19,6 +22,14 @@ bilder:
     beschreibung_it: ''
     beschreibung_en: ''
   - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/hängelampe.det._jg98kc
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/diplomlame.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/lampedipldunkel.jpg
     beschreibung_de: ''
     beschreibung_it: ''
     beschreibung_en: ''
