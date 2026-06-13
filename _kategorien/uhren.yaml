@@ -2,25 +2,35 @@ name_de: Uhren
 name_it: Orologi
 name_en: Clocks
 slug: uhren
+titel_de: ''
+titel_it: ''
+titel_en: ''
+beschreibung_de: ''
+beschreibung_it: ''
+beschreibung_en: ''
+bilder:
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF9235_usc587
+    beschreibung_de: Orologi - Uhren
+    beschreibung_it: Orologi - Uhren
+    beschreibung_en: Orologi - Clocks
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF8616_qtu7u0
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF8620_csw65s
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF9238_xseadk
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/pendeluhr.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
 titelbild:
   bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF9235_usc587
   alt_de: Uhren
   alt_it: Orologi
   alt_en: Clocks
-bilder:
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF9235_usc587
-  beschreibung_de: Orologi - Uhren
-  beschreibung_it: Orologi - Uhren
-  beschreibung_en: Orologi - Clocks
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF8616_qtu7u0
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF8620_csw65s
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF9238_xseadk
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
