@@ -2,33 +2,43 @@ name_de: Töpfe
 name_it: Vasi per piante
 name_en: Pots
 slug: töpfe
+titel_de: ''
+titel_it: ''
+titel_en: ''
+beschreibung_de: ''
+beschreibung_it: ''
+beschreibung_en: ''
+bilder:
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSC01904_ojxzxx
+    beschreibung_de: Topf
+    beschreibung_it: Topf
+    beschreibung_en: Pot
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF7559_ngld3l
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/knospe_i1ljqa
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSC01947_koo401
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSC01804_cszvem
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSC01884_dzdyku
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
+  - bild: /images/portfolio/kern (1).jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
 titelbild:
   bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSC01904_ojxzxx
   alt_de: Töpfe
   alt_it: Pentole
   alt_en: Pots
-bilder:
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSC01904_ojxzxx
-  beschreibung_de: Topf
-  beschreibung_it: Topf
-  beschreibung_en: Pot
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF7559_ngld3l
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/knospe_i1ljqa
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSC01947_koo401
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSC01804_cszvem
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
-- bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSC01884_dzdyku
-  beschreibung_de: ''
-  beschreibung_it: ''
-  beschreibung_en: ''
