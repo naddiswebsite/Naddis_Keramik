@@ -33,6 +33,10 @@ bilder:
     beschreibung_de: ''
     beschreibung_it: ''
     beschreibung_en: ''
+  - bild: /images/portfolio/lampecocoon.jpg
+    beschreibung_de: ''
+    beschreibung_it: ''
+    beschreibung_en: ''
 titelbild:
   bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF0533_abiq1y
   alt_de: Lampen
