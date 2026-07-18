@@ -37,6 +37,10 @@ bilder:
     beschreibung_de: ''
     beschreibung_it: ''
     beschreibung_en: ''
+  - bild: /images/portfolio/4stajionii.jpg
+    beschreibung_de: zusammenarbeit mit dem Restaurant 4 Sajons - Gardena Grödnerhof Hotel & Spa
+    beschreibung_it: collaborazione con il ristorante 4 Sajons - Gardena Grödnerhof Hotel & Spa
+    beschreibung_en: collaboration with the restaurant 4 Sajons - Gardena Grödnerhof Hotel & Spa
 titelbild:
   bild: https://res.cloudinary.com/dqww81axk/image/upload/f_auto,q_auto,w_1800/DSCF0533_abiq1y
   alt_de: Lampen
